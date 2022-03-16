@@ -1,0 +1,367 @@
+@import "/src/scss/_var.scss";
+
+.container-fluid {
+    position: sticky;
+
+    top: 0px;
+    width: 100%;
+    height: 62px;
+    z-index: 14;
+
+    background-color: #2d2d2d;
+
+    .logo {
+        margin-left: 4px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        color: $mycolor1;
+        padding: 7px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .info0 {
+            display: none;
+        }
+
+        .logo-name {
+            position: relative;
+            top: 15px;
+            left: 100px;
+
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            color: #fff;
+            font-size: 25px;
+            font-weight: 800;
+            font-family: arial;
+
+            background: linear-gradient(to right, #ffffff 10%, #9725e8 50%, #5795d7 60%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 7s linear infinite;
+            // display: inline-block;
+            z-index: 1;
+
+            @keyframes textclip {
+                to {
+                    background-position: 200% center;
+                }
+            }
+
+            .first {
+                font-size: 23px;
+                cursor: pointer;
+            }
+        }
+
+        .mylogo1 {
+            font-size: 20px;
+
+            &:hover {
+                color: $mycolor;
+            }
+        }
+
+        .mylogo2 {
+            font-size: 15px;
+            &:hover {
+                color: $mycolor;
+            }
+        }
+
+        span {
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            &:hover {
+                color: $mycolor;
+            }
+        }
+    }
+
+    .user {
+        display: block;
+        position: relative;
+        bottom: 51px; //
+        right: 30px;
+        display: flex;
+        float: right;
+
+        .box1 {
+            color: $mycolor1;
+            .google {
+                position: relative;
+                right: 25px;
+                bottom: 14px;
+                color: $mycolor1;
+                line-height: 14px;
+                font-size: 10px;
+                .welcome {
+                    position: relative;
+                    right: 2px;
+                    font-size: 12px;
+                    color: cornsilk;
+                }
+            }
+        }
+
+        .hover {
+            outline: none;
+            z-index: 1;
+
+            & :hover {
+                color: $mycolor;
+                cursor: pointer;
+            }
+        }
+
+        .mylogo3 {
+            position: relative;
+
+            font-size: 25px;
+            margin-left: 2px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .one {
+        position: relative;
+
+        bottom:19px;
+        left: 45px;
+        width: 80px;
+        height: 62px;
+        background-color: green;
+
+        &:hover {
+            opacity: 0.8;
+            background-color: white;
+            border: none;
+            outline: none;
+            .mylogo4 {
+                color: black;
+            }
+        }
+
+        .mylogo4 {
+            position: relative;
+            top: 20px;
+            left: 30px;
+
+            span {
+                margin-left: 7px;
+                font-size: 12px;
+                font-weight: bold;
+                font-family: arial;
+            }
+        }
+    }
+}
+
+.text {
+    display: block;
+
+    text-align: center;
+
+    position: relative;
+
+    bottom: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    .mylogocard {
+        font-size: 15px;
+        color: cornsilk;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container-fluid {
+        .logo {
+            .box {
+                padding: 2px;
+                .mylogo1 {
+                    font-size: 12px;
+                }
+                .mylogo2 {
+                    font-size: 12px;
+                }
+
+                .number {
+                    font-size: 10px;
+                }
+                .logo-name {
+                    display: block;
+                    position: relative;
+                    top: 36px;
+                    left:-100px;
+                    text-align:left;
+
+                    font-size: 14px;
+
+                    .first {
+                        font-size:15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .text {
+            visibility: hidden;
+
+
+            .mylogocard {
+                font-size: 11px;
+            }
+        }
+
+        .user {
+            .box1 {
+                .google {
+                    position: relative;
+                    bottom:5px;
+                    font-size:9px;
+                    left: 70px;
+                    .welcome{
+                        font-size:10px;
+                    }
+                }
+                .hover {
+                    position: relative;
+                   top:30px;
+                    font-size: 10px;
+                }
+                .mylogo3 {
+                    font-size: 17px;
+                }
+
+
+            }
+
+
+              .one{
+                     position: relative;
+                     bottom:7px;
+
+
+
+
+        left: 42px;
+
+                }
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+.container-fluid{
+    position: sticky;
+
+    top: 0px;
+    .logo{
+        .box{
+ .logo-name {
+                    display: block;
+                    position: relative;
+                    top:25px;
+                    left:-100px;
+
+                    font-size: 15px;
+
+                    .first {
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+
+        }
+    }
+
+     .text {
+            position: relative;
+            top:1px;
+
+
+
+            font-size:10px;
+
+            .mylogocard {
+                font-size: 14px;
+            }
+        }
+
+        .one{
+            position: relative;
+            bottom:19px;
+        }
+
+
+}
+
+
+
+
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+.container-fluid{
+    position: sticky;
+
+    top: 0px;
+    .logo{
+        .box{
+ .logo-name {
+                    display: block;
+                    position: relative;
+                    top:25px;
+                    left:-100px;
+
+                    font-size: 15px;
+
+                    .first {
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+
+        }
+    }
+
+     .text {
+            position: relative;
+            top:1px;
+
+
+
+            font-size:10px;
+
+            .mylogocard {
+                font-size: 14px;
+            }
+        }
+
+        .one{
+            position: relative;
+            bottom:19px;
+        }
+
+
+}
+
+
+
+
+}

@@ -1,0 +1,43 @@
+<app-logo></app-logo>
+<app-mynavbar></app-mynavbar>
+<div class="mycontainer">
+
+  <p class="txt">Women's Watches</p>
+  <div class="mytxt">
+    <p class="txt1">
+Find the perfect watch that helps you become a trend-setter, not a follower. Watches has a great selection of
+women's watches. Shop for gold watches, leather watches, Swiss-made watches & more. Free shipping & easy returns.
+
+    </p>
+
+  </div>
+  <div class="container">
+    <div class="box" *ngFor="let item of collection" [routerLink]="['/wfemale/allwfemale',item.id]">
+
+
+      <img src="{{item.url[0]}}" alt="wtch seric">
+      <div class="overlay">
+        <img src="{{item.url[1]}}" alt="wtch seric">
+      </div>
+
+
+
+      <p class="name">{{item.name}}</p>
+      <p class="price">{{item.price | currency}}</p>
+      <div class="star">
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+      </div>
+      <p class="rev">({{item.rev}})</p>
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+<app-myfooter></app-myfooter>

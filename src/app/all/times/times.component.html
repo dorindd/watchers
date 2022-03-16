@@ -1,0 +1,46 @@
+
+<app-logo></app-logo>
+<app-mynavbar></app-mynavbar>
+<app-mybanner></app-mybanner>
+<div class="mycontainer">
+
+  <p class="txt">Timex Watches</p>
+  <div class="mytxt">
+    <p class="txt1">
+
+Quality Timekeeping Since 1854: Timex's roots date back to 1854 in Waterbury, Connecticut, a time when how you made
+something was just as important as what you made.
+
+    </p>
+
+  </div>
+  <div class="container">
+    <div class="box" *ngFor="let item of collection" [routerLink]="['/all/times',item.id]">
+
+
+      <img src="{{item.url[0]}}" alt="wtch seric">
+      <div class="overlay">
+        <img src="{{item.url[1]}}" alt="wtch seric">
+      </div>
+
+
+
+      <p class="name">{{item.name}}</p>
+      <p class="price">{{item.price | currency}}</p>
+      <div class="star">
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+      </div>
+    
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+<app-myfooter></app-myfooter>

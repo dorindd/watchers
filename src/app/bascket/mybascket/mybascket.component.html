@@ -1,0 +1,74 @@
+<app-logo></app-logo>
+<app-mynavbar></app-mynavbar>
+<app-mybanner></app-mybanner>
+<p class="txt">Cart</p>
+<div class="mycontainer">
+    <div class="box">
+        <p>Name</p>
+    </div>
+    <div class="box">
+        <p>Quantity</p>
+    </div>
+    <div class="box total">
+        <p>Total</p>
+    </div>
+
+</div>
+<hr class="linie">
+
+
+<div class="container" *ngFor="let item of collection">
+    <div class="box1">
+          <img src="{{item.url[0]}}" alt="picture">
+
+          <div class="mybox">
+<p>{{item.name}}</p>
+
+<button (click)="remove(item)">Remove </button>
+          </div>
+
+    </div>
+
+    <div class="box3">
+        <div class="mycounter">
+
+        <p class="number"><strong>{{item.quantity}}</strong></p>
+        <div class="number one">
+   <div type="button" (click)="increace(item)"> <i class="fa fa-plus " aria-hidden="true"></i></div>
+   <div type="button" (click)="decreace(item)"> <i class="fa fa-minus " aria-hidden="true"></i></div>
+        </div>
+        </div>
+    </div>
+    <div class="box4">
+          <p>{{item.price * item.quantity | currency}}</p>
+    </div>
+</div>
+<hr class="linie">
+
+<div class="pricetotal">
+<div class="total">
+<div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box">
+        <p class="sub-txt">Subtotal</p>
+    </div>
+    <div *ngIf='showbasket'class="box">
+        <p>{{total | currency}}</p>
+
+    </div>
+
+</div>
+
+<p class="check-txt">Shipping, taxes, and discounts calculated at checkout.</p>
+<button mat-raised-button routerLink="/payment/mypayment">Checkout</button>
+
+</div>
+<hr class="linie">
+<app-myfooter></app-myfooter>
+
+
+
+
+

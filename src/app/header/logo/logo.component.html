@@ -1,0 +1,94 @@
+<div class="container-fluid">
+
+
+
+
+  <div class="logo">
+
+
+
+    <div class="box">
+      <a href="tel:+4075678543" class='info'><i class="fa fa-whatsapp mylogo1" aria-hidden="true"></i><span
+          class="info0">+4075678543</span></a><br>
+
+    </div>
+    <div class="box">
+      <a href="mailTo:dorian709@yahoo.co.uk"><i class="fa fa-envelope-o mylogo2" aria-hidden="true"></i></a>
+
+    </div>
+    <div class="box">
+      <span class="number">020 332 768</span>
+    </div>
+    
+    <div class="box" routerLink="/" (click)="getHome()">
+      <div class="logo-name">
+      <div><span class="first">W</span>atchers.com</div>
+    </div>
+
+    </div>
+
+  </div>
+
+  <p *ngIf='show' class="text"><i class="fa fa-shopping-basket mylogocard " aria-hidden="true"></i> Your card is empty
+  </p>
+  <p *ngIf='myshow' class="text"><i class="fa fa-shopping-basket mylogocard " aria-hidden="true"></i> You add {{number}}
+    <span
+      *ngIf="show1">product</span><span *ngIf="show2">products</span> to basket
+  </p>
+
+  <div class="user">
+
+ <div class="box1" >
+
+
+  <div class="google" *ngIf="share.user as user">
+    <span class="welcome" *ngIf="welcomeshow">Welcome</span>
+
+ <span *ngIf="data">{{user.displayName |uppercase}} </span><br>
+   <span *ngIf="data">{{user.email}}</span>
+
+ </div>
+
+</div>
+
+    <div class="box1 ">
+
+
+<div class="hover">
+ <i  class="fa fa-user-o mylogo3" aria-hidden="true"></i>
+    <span *ngIf="logIn" (click)='getLogIn()'> Log in</span>
+<span *ngIf="showLogOut" (click)="logOut()"> Log out</span>
+
+</div>
+
+
+
+
+    </div>
+
+
+    <div class="box1 one" (click)="getBascket('/bascket/mybascket', '')">
+      <i class="fa fa-shopping-cart mylogo4" aria-hidden="true"><span>{{number}}</span></i>
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

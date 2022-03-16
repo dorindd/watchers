@@ -1,0 +1,108 @@
+.empty {
+
+  width           : 50%;
+  height          : 530px;
+  background-color: white;
+  position        : relative;
+  top             : 80px;
+  margin          : 0 auto;
+  border-radius   : 10px;
+
+}
+
+
+
+
+
+.icon-empty {
+  display     : block;
+  margin-left : auto;
+  margin-right: auto;
+  width       : 18%;
+  position    : relative;
+  top         : 30px;
+
+
+}
+
+.txt-empty {
+  text-align : center;
+  position   : relative;
+  top        : 40px;
+  font-size  : 35px;
+  color      : navy;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.txt-empty1 {
+  text-align : center;
+  position   : relative;
+  top        : 70px;
+  font-size  : 23px;
+  color      : navy;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.btn-empty {
+  width           : 200px;
+  height          : 40px;
+  display         : block;
+  margin          : 0 auto;
+  position        : relative;
+  top             : 150px;
+  background-color: navy;
+  color           : white;
+  border          : none;
+  letter-spacing  : 1px;
+  text-transform  : uppercase;
+}
+
+.btn-empty {
+  outline: none;
+
+}
+
+@media(max-width:576px) {
+
+
+
+  .empty {
+    width: 90%;
+
+  }
+
+  .icon-empty {
+
+    width: 30%;
+  }
+
+
+}
+
+@media(min-width:768px)and (max-width:900px) {
+  .icon-empty {
+
+    width: 35%;
+  }
+
+
+
+
+
+}
+
+@media(min-width:900px)and (max-width:1024px) {
+
+
+  .icon-empty {
+
+    width: 35%;
+  }
+
+.empty{
+height:750px;
+
+}
+
+
+}
