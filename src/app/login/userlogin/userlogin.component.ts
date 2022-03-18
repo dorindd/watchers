@@ -15,11 +15,15 @@ export class UserloginComponent implements OnInit {
 
 
   email:any=''
-  currentpassword:any=''
+
+ password:any=''
 
 show: boolean = false;
 
 message='something went wrong'
+
+
+
   constructor(private share:SharedataService,private fireauth:AngularFireAuth) {
 
 
@@ -44,9 +48,9 @@ this.show = !this.show;
 
  signIn(){
 
-this.share.signIn()
+   this.share.signIn()
 
-
+   
 
   }
 
@@ -59,15 +63,15 @@ login(){
     alert('please enter the email')
     return;
   }
-  if(this.currentpassword ==''){
+  if(this.password ==''){
     alert('please enter the password')
     return;
   }
-  this.share.login(this.email, this.currentpassword);
+  this.share.login(this.email, this.password);
 
 
   this.email='';
-  this.currentpassword='';
+  this.password='';
 
 
 
@@ -75,7 +79,9 @@ login(){
 
 
 
-
+  logOut(){
+    this.share.logOut()
+  }
 
 
 

@@ -1,6 +1,6 @@
 
 <div class=" container-fluid">
-  <p routerLink="/" class="logo"><span class="first">W</span>atchers.com</p>
+  <p routerLink="/" class="logo"><span class="first">DD</span>watches</p>
 
 </div>
 
@@ -32,6 +32,15 @@
 
 
      </div>
+
+
+
+
+
+
+
+
+
      <div class="box">
 <p class="title"><span class="span">2</span> Payment</p>
 <p class="cards">Accepted Cards</p>
@@ -50,19 +59,19 @@
 
 <form [formGroup]="formular1" (ngSubmit)="onSubmit1()">
 
-  <label for="name"><span class="star">*</span> Card Owner</label><br>
+  <label for="name"><span class="star">*</span>Card Owner</label><br>
   <input type="text" name=name id=name required formControlName="name" placeholder="Card Owner Name"><br>
 
 
 
-  <label for="number"><span class="star">*</span> Card number</label><br>
+  <label for="number"><span class="star">*</span>Card number</label><br>
   <input type="text" name="number" required formControlName="number" placeholder=" Valid Card Number"><br>
 
-  <label for="date"><span class="star">*</span> Expired Date</label><br>
+  <label for="date"><span class="star">*</span>Expired Date</label><br>
   <input class="myinput" type="text" name="date" required formControlName="date" placeholder="MM/YY"><br>
 
 
-  <label for="code"><span class="star">*</span> CV Code (CVC)</label><br>
+  <label for="code"><span class="star">*</span>CV Code (CVC)</label><br>
   <input class="myinput" type="text" name=code id=name required formControlName="code" placeholder="CVC"><br>
 
 </form>
@@ -70,17 +79,13 @@
 
 
      </div>
-   </div>
+
+<div class="box oneb">
+
+<div class="mycontainer">
 
 
-
-
- <div class="mycontainer">
-
-
-   <div class="box1">
-
-
+  <div class="box1">
 
 
 
@@ -90,49 +95,77 @@
 
 
 
-     <p class="title"><span class="span">3</span> Select Delivery Options</p>
-     <div class="transport">
-       <p class="title">Shipping Method</p>
-       <div class="selection">
-         <input type="radio" id="pick" name="delivery" value="store1" (click)="removeTransport()" checked [disabled]="!name.value || !email.value || !address.value || !city.value ||
+
+
+    <p class="title"><span class="span">3</span> Select Delivery Options</p>
+    <div class="transport">
+      <p class="title">Shipping Method</p>
+      <div class="selection">
+        <input type="radio" id="pick" name="delivery" value="store1" (click)="removeTransport()" checked [disabled]="!name.value || !email.value || !address.value || !city.value ||
           !code.value" />
 
-         <label for="pick">Collect from Store</label><span class="currency">{{0|currency}}</span><br />
+        <label for="pick">Collect from Store</label><span class="currency">{{0|currency}}</span><br />
 
 
 
-         <input type="radio" id="pick1" name="delivery" value="store2" (click)="addStandard()" [disabled]="!name.value || !email.value || !address.value || !city.value
+        <input type="radio" id="pick1" name="delivery" value="store2" (click)="addStandard()" [disabled]="!name.value || !email.value || !address.value || !city.value
               ||!code.value">
 
-         <label for="pick1">Standard Shipping</label><span class="currency">{{3|currency}}</span><br />
+        <label for="pick1">Standard Shipping</label><span class="currency">{{3|currency}}</span><br />
 
 
-         <input type="radio" id="pick1" name="delivery" value="store2" (click)="addTransport()" [disabled]="!name.value || !email.value || !address.value || !city.value
+        <input type="radio" id="pick1" name="delivery" value="store2" (click)="addTransport()" [disabled]="!name.value || !email.value || !address.value || !city.value
            ||!code.value" />
 
-         <label for="pick1">Priority Shipping </label><span class="mycurrency">{{10|currency}}</span>
+        <label for="pick1">Priority Shipping </label><span class="mycurrency">{{10|currency}}</span>
 
-       </div>
-
-
-
-     </div>
+      </div>
 
 
-   </div>
 
-   <div class="box1">
-     <p class="title"><span class="span">4</span> Order Summary</p>
-     <hr class="linie1">
-     <p *ngIf="show" class="total">Order Total: {{amount |currency}}</p>
-     <p *ngIf="show1" class="total">Order Total: {{amount+transport|currency}}</p>
-     <p *ngIf="show2" class="total">Order Total: {{amount +standard|currency}}</p>
+    </div>
 
-     <hr class="linie2">
-     <button mat-raised-button class="pay-btn" (click)="payNow('/pay/paydone','/error/carderror')">Buy now</button><br>
-     <button mat-raised-button routerLink="/bascket/mybascket" class="cancel-btn">Cancel</button>
-   </div>
- </div>
+
   </div>
 
-  <div class="spatiu"></div>
+  <div class="box1">
+    <p class="title"><span class="span">4</span> Order Summary</p>
+    <hr class="linie1">
+    <p *ngIf="show" class="total">Order Total: {{amount |currency}}</p>
+    <p *ngIf="show1" class="total">Order Total: {{amount+transport|currency}}</p>
+    <p *ngIf="show2" class="total">Order Total: {{amount +standard|currency}}</p>
+
+    <hr class="linie2">
+    <button mat-raised-button class="pay-btn" (click)="payNow('/pay/paydone','/error/carderror')">Buy now</button><br>
+    <button mat-raised-button routerLink="/bascket/mybascket" class="cancel-btn">Cancel</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+   </div>
+
+
+
+
+
+<div class="containertxt">
+  <p class='txt'>By placing this order, you are confirming that you agree to our <span class="terms">Terms and Conditions and Privacy Policy.</span> </p>
+</div>
+<!-- <hr> -->
+<div class="address">
+  <p>DDWatches Ltd</p>
+  <p>79 North Squaw Creek Avenue New York, NY 10002</p>
+</div>

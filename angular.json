@@ -44,13 +44,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
                 }
               ],
               "fileReplacements": [
@@ -113,8 +113,8 @@
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "dist/shop",
-            "netlifyToken": "jYZUA4IOAaoU--VWK8rQTjSfs4Kv6ZMhEBm-Y6zjg3E",
-            "siteId": "aa68c009-0903-4255-9928-954d638af34c"
+            "netlifyToken": "WzZDjgTZi78zlsHbRWENZZIQ5eY3ZBIX7rutK1Apgus",
+            "siteId": "8eef7b37-014e-40b0-b3b4-bd9e9b59499a"
           }
         }
       }

@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderModule } from './header/header.module';
+
 
 import { MainComponent } from './main/main.component';
 import{AngularFireModule} from '@angular/fire/compat';
@@ -19,6 +19,7 @@ import { NewModule } from './new/new.module';
 import { BannerModule } from './banner/banner.module';
 import { MottoModule } from './motto/motto.module';
 import { FooterModule } from './footer/footer.module';
+ import { HeaderModule } from './header/header.module';
 
 
 
@@ -37,7 +38,7 @@ import { FooterModule } from './footer/footer.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-      HeaderModule,
+
 
 
     FormsModule,
@@ -52,7 +53,8 @@ import { FooterModule } from './footer/footer.module';
      NewModule,
      BannerModule,
      MottoModule,
-     FooterModule
+     FooterModule,
+ HeaderModule
 
 
   ],

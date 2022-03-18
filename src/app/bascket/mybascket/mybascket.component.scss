@@ -8,49 +8,52 @@
     font-weight: 600;
     font-family: "Libre Baskerville", serif;
 }
-.linie {
-    margin: 30px auto;
-    width: 63%;
-}
-.mycontainer {
+
+
+
+.mycontainer{
+    display:block;
+     width:100%;
+
+    #table{
+
+
+border:1px solid grey;
+         margin:0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+width:70%;
+height:auto;
+
+     border-bottom: solid 1px rgba(4, 4, 4, 0.09);
+border-left:none;
+border-right:none;
+border-top:none;
+
+
+  background-color: white;
+
+   outline: none;
+
+
+
+img {
+            width: 150px;
+            margin:5px;
+        }
+
+
+
+.allnames{
     position: relative;
-    top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 400px;
+   left:30px;
 
-    flex-wrap: nowrap;
-
-    .box {
-        p {
-            color: black;
-            font-size: 1em;
-            letter-spacing: 1px;
-        }
-
-        .total {
-            position: relative;
-            right: 30px;
-        }
-    }
 }
+   .btn-rem {
+       position: relative;
+top:50px;
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(150px, auto);
-    grid-gap: 410px;
-
-    grid-template-areas: "box1  box3 box4";
-
-    .box1 {
-        .mybox {
-            position: relative;
-            left: 150px;
-            bottom: 150px;
-
-            button {
-                width: 50%;
+                width:100px;
                 height: 30px;
 
                 outline: none;
@@ -61,32 +64,18 @@
                 text-transform: uppercase;
                 font-size: 10px;
                 letter-spacing: 1px;
-            }
-            p {
-                color: black;
-                font-size: 13px;
-                letter-spacing: 1px;
-                font-weight: lighter;
-            }
-        }
 
-        grid-area: box1;
-        img {
-            width: 150px;
-        }
-    }
 
-    .box3 {
-        grid-area: box3;
-
-        .mycounter {
+}
+ .mycounter {
             position: relative;
-            left: 50px;
+
             display: flex;
             width: 90px;
             height: 40px;
-            border: solid 1px rgba(4, 4, 4, 0.09);
+
             justify-content: center;
+
             .number {
                 margin: 10px;
             }
@@ -100,51 +89,46 @@
                 visibility: visible;
             }
         }
-    }
-    .box4 {
-        grid-area: box4;
-    }
-}
+        .price{
 
-.pricetotal {
-    width: 63%;
-    height: 140px;
+            width:30%;
 
-    margin: 0 auto;
-    .total {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        gap: 280px;
-
-        .box {
-            .sub-txt {
-                font-weight: 400;
-                color: black;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-            }
         }
-    }
-    .check-txt {
-        position: relative;
-        top: 20px;
-        right: 10px;
-        text-align: right;
+     th {
+     border-bottom: solid 1px rgba(4, 4, 4, 0.09);
+     }
+     .title{
+         text-transform: uppercase;
+     }
+     .title1{
+         font-weight:600;
+         text-transform: uppercase;
+     }
 
-        font-weight: 400;
+
+}
+.box{
+
+     display:block;
+    margin:0 auto;
+
+    .check-txt{
+        position: relative;
+        top:10px;
+        text-align: center;
+        font-size:16px;
+        font-weight:400;
     }
-    button {
-        display:block;
+
+    .btncheck{
+display:block;
         margin:0 auto;
-
-        width: 20%;
-        height: 40px;
+        width:180px;
+        height:40px;
 
         position: relative;
-        top: 50px;
-
-
+         top: 50px;
+cursor: pointer;
         background-color: #126797;
         color: white;
         text-transform: uppercase;
@@ -153,252 +137,152 @@
         border: none;
         outline: none;
         border-radius: 4px;
-        transition: 0.2s;
+
 
         &:hover {
             opacity: 0.9;
         }
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+}
 }
 
-@media screen and (max-width: 575px) {
+ @media screen and (max-width: 575px) {
     .txt {
         font-size: 25px;
     }
-    .linie {
-        margin: 30px auto;
-        width: 90%;
-    }
-    .mycontainer {
-        display: flex;
-        justify-content: center;
-        gap: 70px;
 
-        .box {
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-    .container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: minmax(150px, auto);
-        grid-gap: 70px;
-        .box1 {
-            img {
-                width: 50px;
+    .mycontainer{
+        #table {
+
+            img{
+                width:55px;
+                margin:15px;
             }
 
-            .mybox {
+.allnames{
+    position: relative;
+    top:20px;
+   left:0px;
+
+
+    font-size:10px;
+}
+
+.btn-rem{
+    width:70%;
+    height:23px;
+    position: relative;
+    top:0px;
+    font-size:8px;
+    text-transform: none;
+    background:blue;
+    color:white;
+}
+
+
+.mycounter {
                 position: relative;
-                left: 53px;
-                bottom: 53px;
-                button {
-                    width: 100%;
-                    height: 25px;
-                    letter-spacing: none;
-                    text-transform: none;
-                    background: blue;
-                    color: white;
-                }
+                left:40px;
+                width:70px;
+                height: 45px;
 
-                p {
-                    font-size: 9px;
-                    line-height: 10px;
-                    font-weight: 450;
+                .number {
+                    margin: 12px;
                 }
             }
-        }
-        .box3 {
-            .mycounter {
-                position: relative;
-                left: 20px;
-                width: 70px;
-                height: 40px;
-            }
-        }
-    }
-    .pricetotal {
-        width: 100%;
-        .total {
-            display: flex;
-            gap: 50px;
 
-        }
-        button {
-            display:block;
-            margin:0 auto;
-            float:none;
+ .price {
+
             width:50%;
-            height: 40px;
             position: relative;
+            left:50px;
+            font-size: 12px;
 
+
+        }
+ .total{
+
+            width:50%;
+            position: relative;
+            left:50px;
+            font-size: 12px;
+            font-weight:300;
+
+
+        }
+        .title{
+            font-size: 12px;
+            margin-left:40px;
+        }
+        }
+        .box{
+            .check-txt{
+                font-size:15px;
+            }
+            .btn-check {
+                width:40%;
+            }
         }
     }
 }
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 
-.txt {
-        font-size: 25px;
-    }
-    .linie {
-        margin: 30px auto;
-        width: 90%;
-    }
-    .mycontainer {
-        display: flex;
-        justify-content: center;
-        gap: 200px;
+.txt{
+    font-size:30px;
+}
 
-        .box {
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-    .container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: minmax(150px, auto);
-        grid-gap:230px;
-        .box1 {
-            img {
-                width: 50px;
+.mycontainer{
+#table{
+
+      img{
+                width:85px;
+                margin:25px;
             }
 
-            .mybox {
-                position: relative;
-                left: 53px;
-                bottom: 53px;
-                button {
-                    width: 100%;
-                    height: 25px;
-                    letter-spacing: none;
-                    text-transform: none;
-                    background: blue;
-                    color: white;
-                }
+ .price {
 
-                p {
-                    font-size: 9px;
-                    line-height: 10px;
-                    font-weight: 450;
-                }
-            }
-        }
-        .box3 {
-            .mycounter {
-                position: relative;
-                left: 20px;
-                width: 70px;
-                height: 40px;
-            }
-        }
-    }
-    .pricetotal {
-        width: 100%;
-        .total {
-            display: flex;
-            gap: 150px;
+            width:20%;
+
+
+            font-size: 12px;
+
 
         }
-        button {
-            display:block;
-            margin:0 auto;
-            float:none;
+        .btn-rem{
             width:30%;
-            height: 40px;
-            position: relative;
-
         }
-    }
-
-
 
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-.txt {
-        font-size: 25px;
-    }
-    .linie {
-        margin: 30px auto;
-        width: 90%;
-    }
-    .mycontainer {
-        display: flex;
-        justify-content: center;
-        gap: 300px;
-
-        .box {
-            p {
-                font-size: 12px;
+.box{
+            .check-txt{
+                font-size:15px;
+            }
+            .btn-check {
+                width:30%;
             }
         }
-    }
-    .container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: minmax(150px, auto);
-        grid-gap:320px;
-        .box1 {
-            img {
-                width: 50px;
-            }
 
-            .mybox {
-                position: relative;
-                left: 53px;
-                bottom: 53px;
-                button {
-                    width: 100%;
-                    height: 25px;
-                    letter-spacing: none;
-                    text-transform: none;
-                    background: blue;
-                    color: white;
-                }
-
-                p {
-                    font-size:12px;
-                    line-height: 10px;
-                    font-weight: 450;
-                }
-            }
-        }
-        .box3 {
-            .mycounter {
-                position: relative;
-                left: 20px;
-                width: 90px;
-                height: 40px;
-            }
-        }
-    }
-    .pricetotal {
-        width: 100%;
-        .total {
-            display: flex;
-            gap: 200px;
-
-        }
-        button {
-            display:block;
-            margin:0 auto;
-            float:none;
-            width:30%;
-            height: 40px;
-            position: relative;
-
-        }
-    }
-
-
-
+}
 
 
 }

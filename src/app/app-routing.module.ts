@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
+
+
 import { MainComponent } from './main/main.component';
 
 
@@ -10,7 +12,6 @@ import { MainComponent } from './main/main.component';
 const routes: Routes = [
  {path:'main',component:MainComponent},
   {path:"",component:MainComponent,pathMatch:"full"},
-
 
   {path:'auth',loadChildren:()=>import('./login/login.module').then(m=>m.LoginModule)},
   {path:'register',loadChildren:()=>import('./register/register.module').then((m)=>m.RegisterModule)},

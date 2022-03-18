@@ -123,19 +123,13 @@ totalPrice(){
 
 
 
-  // this.total=this.collection.reduce(function(acc:any,val:any){
-
-
-  //   return acc+(val.price*val.quantity)
-
-
-
-  // },0);
 
 
 
 
 }
+
+
 
 }
 

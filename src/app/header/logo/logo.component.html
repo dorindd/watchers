@@ -19,45 +19,45 @@
     <div class="box">
       <span class="number">020 332 768</span>
     </div>
-    
+
     <div class="box" routerLink="/" (click)="getHome()">
       <div class="logo-name">
-      <div><span class="first">W</span>atchers.com</div>
+      <div><span class="first">DD</span>watches</div>
     </div>
 
     </div>
 
   </div>
 
-  <p *ngIf='show' class="text"><i class="fa fa-shopping-basket mylogocard " aria-hidden="true"></i> Your card is empty
+  <p *ngIf='show' class="text"><i class="fa fa-shopping-basket mylogocard " aria-hidden="true"></i> Your cart is empty
   </p>
-  <p *ngIf='myshow' class="text"><i class="fa fa-shopping-basket mylogocard " aria-hidden="true"></i> You add {{number}}
+  <p *ngIf='myshow' class="text"><i class="fa fa-shopping-basket mylogocard " aria-hidden="true"></i> You have added {{number}}
     <span
-      *ngIf="show1">product</span><span *ngIf="show2">products</span> to basket
+      *ngIf="show1">product</span><span *ngIf="show2">products</span> to cart
   </p>
 
   <div class="user">
 
- <div class="box1" >
+ <div class="box1">
+<div class="google">
+  <span class='welcome'*ngIf="welcome">Welcome</span>
+
+     <span *ngIf="data">{{user.displayName |uppercase}} </span><br>
+    <span *ngIf="data">{{user.email}} </span><br>
+</div>
 
 
-  <div class="google" *ngIf="share.user as user">
-    <span class="welcome" *ngIf="welcomeshow">Welcome</span>
-
- <span *ngIf="data">{{user.displayName |uppercase}} </span><br>
-   <span *ngIf="data">{{user.email}}</span>
-
- </div>
 
 </div>
 
     <div class="box1 ">
 
 
-<div class="hover">
+<div class="hover" routerLink="/auth/user">
  <i  class="fa fa-user-o mylogo3" aria-hidden="true"></i>
-    <span *ngIf="logIn" (click)='getLogIn()'> Log in</span>
-<span *ngIf="showLogOut" (click)="logOut()"> Log out</span>
+    <span > Account</span>
+
+
 
 </div>
 

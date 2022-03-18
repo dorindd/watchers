@@ -46,9 +46,9 @@
             background-size: 200% auto;
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color:transparent;
             animation: textclip 7s linear infinite;
-            // display: inline-block;
+
             z-index: 1;
 
             @keyframes textclip {
@@ -58,7 +58,11 @@
             }
 
             .first {
-                font-size: 23px;
+
+                font-size: 25px;
+
+                font-family:arial;
+
                 cursor: pointer;
             }
         }
@@ -192,6 +196,7 @@
     .container-fluid {
         .logo {
             .box {
+                margin-left:5px;
                 padding: 2px;
                 .mylogo1 {
                     font-size: 12px;

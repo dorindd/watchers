@@ -1,37 +1,47 @@
 
-<div class=" container-fluid">
-  <p routerLink="/" class="logo"><span class="first">W</span>atchers.com</p>
+
+<div class="container-fluid" routerLink="/">
+  <span class="logo"><span class="first">DD</span>watches</span>
 
 </div>
 
 <div class="container">
 
-<p class="txt">Create a account</p>
 
 
-<form>
+  <p class="txt">Create a account</p>
+  <form>
 
-  <input type="text" id="email" placeholder="Email address" name='email' [(ngModel)]="email" required
-    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-  <label for="email"><span>*</span> Email address</label>
+    <div class="col">
+      <label><span>*</span> Email address</label>
+      <input class="form-control myinp" type="text" id="email" placeholder="Email address" name='email'
+        [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+      <label><span>*</span> Password</label>
+      <input class="form-control" [type]="show ? 'text' : 'password'" id="password" placeholder="Password"
+        name="password" [(ngModel)]="password" required>
+      <span class="field-icon " (click)="showPsd()"><i class="fa"
+          [ngClass]="{'fa-eye':show,'fa-eye-slash':!show}"></i></span>
 
-
-
-  <input [type]="show ? 'text' : 'password'" id="password" placeholder="Password" name="password"
-    [(ngModel)]="password"  required >
-
-
-
-  <label for="password"><span>*</span> Password</label>
-  <div class='btn-btn' (click)="showPsd()"><i class="fa" [ngClass]="{'fa-eye':show,'fa-eye-slash':!show}"></i></div>
-  <button class="btn" (click)="register()">Register</button>
- <p class='mytxt'>Or,Continue with</p>
-
- <button class='googlebtn' (click)="signIn()">
-   <img class='googleimg' src=".././assets/img/google.png" alt="google picture">
-   <span>Sign in with Google</span>
- </button>
+    </div>
 
 
-</form>
+
+
+
+
+
+ <button class="btn" (click)="register()">Register</button>
+
+    <p class='mytxt'>Or,Continue with</p>
+
+    <button class='googlebtn' (click)="signIn()">
+      <img class='googleimg' src=".././assets/img/google.png" alt="google picture">
+      <span>Sign in with Google</span>
+    </button>
+
+
+
+  </form>
+
 </div>
+<app-myfooter></app-myfooter>

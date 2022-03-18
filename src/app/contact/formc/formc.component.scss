@@ -46,6 +46,9 @@ form {
   text-align: center;
   position: relative;
   top: 40px;
+  height:100%;
+  width: 100%;
+
 }
 input {
   width: 70%;
@@ -135,28 +138,36 @@ opacity: 0.8;
     }
     .txt1{
         position: relative;
-        top:30px;
-        font-size:30px;
+        top:10px;
+        font-size:20px;
     }
     .txt2{
-        font-size:20px;
+        font-size:12px;
     }
   .mycontainer {
       position: relative;
-      top:90px;
+
     width: 90%;
-    height: 530px;
+    height: 620px;
   }
   form {
     position: relative;
-    top: 50px;
+    bottom:70px;
+
+   width:100%;
+
+
   }
+
   .btn-btn {
+
     width: 25%;
     height: 30px;
     font-size: 11px;
   }
   .btn-btn1 {
+    position: relative;
+    top:20px;
     font-size: 15px;
   }
   .btn-txt {
@@ -170,11 +181,11 @@ opacity: 0.8;
     }
     .txt1{
         position: relative;
-        top:50px;
-        font-size:40px;
+        top:10px;
+        font-size:25px;
     }
     .txt2{
-        font-size:30px;
+        font-size:15px;
     }
 
 
@@ -186,7 +197,7 @@ opacity: 0.8;
 
     .mycontainer {
     width: 90%;
-    height: 530px;
+    height: 620px;
   }
   form {
     position: relative;
@@ -225,8 +236,10 @@ opacity: 0.8;
 
 
     .mycontainer {
+      position: relative;
+      bottom:60px;
     width: 90%;
-    height: 530px;
+    height:630px;
   }
   form {
     position: relative;
@@ -245,44 +258,47 @@ opacity: 0.8;
   }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .mycontainer {
+
+
+:host{
+        display:block;
+       height:1000px;
+    }
+    .txt1{
+        position: relative;
+        top:10px;
+        font-size:25px;
+    }
+    .txt2{
+        font-size:15px;
+    }
+
+
+
+
+
+
+    .mycontainer {
+      position: relative;
+      bottom:60px;
     width: 90%;
-    height: 530px;
+    height:630px;
   }
   form {
     position: relative;
     top: 50px;
   }
   .btn-btn {
-    width: 15%;
-    height: 30px;
+    width:17%;
+    height: 35px;
     font-size: 15px;
   }
   .btn-btn1 {
-    font-size: 20px;
+    font-size:20px;
   }
   .btn-txt {
-    font-size: 22px;
+    font-size: 17px;
   }
-}
-@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .mycontainer {
-    width: 90%;
-    height: 530px;
-  }
-  form {
-    position: relative;
-    top: 50px;
-  }
-  .btn-btn {
-    width: 15%;
-    height: 30px;
-    font-size: 15px;
-  }
-  .btn-btn1 {
-    font-size: 20px;
-  }
-  .btn-txt {
-    font-size: 22px;
-  }
+
+
 }

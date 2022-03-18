@@ -39,14 +39,14 @@ if(this.email==''){
     alert('please enter the password')
     return;
   }
-  this.share.register(this.email, this.password);
+    this.share.register(this.email, this.password);
   this.email='';
   this.password=''
 
 }
 
 signIn(){
-  this.share.signIn()
+  this.share.signIn()//plus sign in
 }
 
 }

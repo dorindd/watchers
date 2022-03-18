@@ -100,7 +100,7 @@ this.formular1=new FormGroup({
 
 
   }
-  showPay:boolean=false//
+
 
 
 
