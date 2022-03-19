@@ -1,7 +1,6 @@
 
 
 
-
 .container-fluid {
     height: 200px;
     background-image: url("/assets/img/w1.jpg");
@@ -49,16 +48,14 @@
 }
 
 .container {
-    display: block;
+
+ display: block;
     position: relative;
     top: 30px;
 
     width: 30%;
     height: 580px;
-
     background-color:lightblue;
-
-    z-index: 11;
 
     box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
@@ -223,8 +220,15 @@
 
     }
 }
+.spatiu{
 
+    width:100%;
+    height:50px;
+}
 @media screen and (max-width: 575px) {
+
+
+
     .container-fluid {
         .logo {
             font-size: 25px;
@@ -232,6 +236,7 @@
     }
 
     .container {
+
         width: 100%;
         height: 580px;
 
@@ -251,9 +256,16 @@
             }
         }
     }
-}
+    .spatiu{
+        height:0;
+    }
+    }
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
     .container-fluid {
         .logo {
             font-size: 25px;
@@ -279,9 +291,14 @@
                 width: 50%;
             }
         }
+        }
+
     }
-}
+
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
     .container-fluid {
         .logo {
             font-size: 25px;
@@ -289,6 +306,7 @@
     }
 
     .container {
+     
         width: 70%;
         height: 580px;
 
@@ -307,5 +325,5 @@
                 width: 50%;
             }
         }
-    }
-}
+    }}
+

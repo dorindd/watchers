@@ -8,6 +8,7 @@ import { NavbarModule } from '../navbar/navbar.module';
 import { RouterModule } from '@angular/router';
 import { BannerModule } from '../banner/banner.module';
 import { FooterModule } from '../footer/footer.module';
+import { BrandsModule } from '../brands/brands.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterModule } from '../footer/footer.module';
     NavbarModule,
     RouterModule,
     FooterModule,
-    BannerModule
+    BannerModule,
+    BrandsModule
   ]
 })
 export class BascketModule { }

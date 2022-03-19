@@ -23,7 +23,7 @@ font-family:'Bauer Bodoni',sherif;
      top:50px;
 
     width: 100%;
-    height: auto;
+    height:auto;
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
@@ -111,10 +111,7 @@ font-family: 'Abril Fatface', cursive;
     }
 }
 @media screen and (max-width: 575px){
-:host{
-    display:block;
-    height:900px;
-}
+
     .txt{
 position: relative;
 top:15px;
@@ -135,10 +132,7 @@ top:15px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-:host{
-    display:block;
-    height:900px;
-}
+
 
 
     .txt{
@@ -168,10 +162,6 @@ top:10px;
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-:host{
-    display:block;
-    height:300px;
-}
 
 .txt{
 position: relative;

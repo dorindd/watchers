@@ -18,5 +18,9 @@ value:any=''
     this.value='';
   }
 
+toHome(){
+  document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+}
+
 
 }

@@ -1541,10 +1541,11 @@ quantity: 1,
     txt16: "Weight: 2.9oz (82 grams)",
 
   quantity: 1 },
-    { id: 2, url: ['assets/img/n4.jpg', 'assets/img/n5.jpg', 'assets/img/n6.jpg'], name: 'Timex Waterbury Dive Automatic 40mm Black SS', price: 289, rev: '3 Review',
+    {
+      id: 2, url: ['assets/img/n4.jpg', 'assets/img/n5.jpg', 'assets/img/n6.jpg'], name: 'Nsquare Five Elements Serious Automatic Blue', price: 489, rev: '3 Review',
 
-      txt1: "Timex Waterbury Dive Automatic 40mm Black SS has back-filled luminous hands and silkscreened dials for stargazing. The Orbiting Planetary System consists of glowing Super-LumiNova indices and planets to help space explorers keep track of time as they travel in the darkest regions of the universe. The inner luminous planet represents the hours while the outer luminous planet shows the minutes, all while orbiting around the central axis. The constellation-like seconds hand sweeps across the dial similar to comets streaking across the nightsky and once every minute it aligns to complete the Trappist-1 star map dial.",
-    txt2: "The Timex is built around a high-torque, Seiko VH31 movement with semi-sweeping secondshand. The caseback features engraved 50th anniversary commemorative artwork of the Apollo 11 mission patch.",
+      txt1: "Nsquare Five Elements Serious Automatic Blue has back-filled luminous hands and silkscreened dials for stargazing. The Orbiting Planetary System consists of glowing Super-LumiNova indices and planets to help space explorers keep track of time as they travel in the darkest regions of the universe. The inner luminous planet represents the hours while the outer luminous planet shows the minutes, all while orbiting around the central axis. The constellation-like seconds hand sweeps across the dial similar to comets streaking across the nightsky and once every minute it aligns to complete the Trappist-1 star map dial.",
+      txt2: "Nsquare Five  is built around a high-torque, Seiko VH31 movement with semi-sweeping secondshand. The caseback features engraved 50th anniversary commemorative artwork of the Apollo 11 mission patch.",
     txt3: "The straps are made from U.S. Horween leather which is ribbed and stitched to pay tribute to the articulated ridge-lines seen on space gloves.",
     txt4: "In honor of the year of the moon landing, only 1969 pieces of each Trappist-1 NASA Edition colorway will be made and each watch will be individually numbered.",
     txt5: "Movement: Seiko VH31, 2 Jewels Accuracy: -/+15 sec per month",

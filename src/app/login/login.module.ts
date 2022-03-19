@@ -6,6 +6,7 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterModule } from '../register/register.module';
 import { FooterModule } from '../footer/footer.module';
+import { MottoModule } from '../motto/motto.module';
 
 
 
@@ -25,7 +26,8 @@ import { FooterModule } from '../footer/footer.module';
     LoginRoutingModule,
     FormsModule,
     RegisterModule,
-    FooterModule
+    FooterModule,
+    MottoModule
 
 
 
