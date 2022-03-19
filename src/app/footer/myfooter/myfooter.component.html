@@ -45,8 +45,11 @@
 <p class="txt1">Newsletter</p>
 <p class="txt5">Keeep up to update our news releaces & exclusive discounds!</p>
 <div class="buttons">
+    <form (ngSubmit)="sendData(f)" #f="ngForm">
 <input type="email" placeholder="Enter your email..." [(ngModel)]='value' name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-<button type="Subscribe" (click)="getData()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+<button type="submit"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+
+</form>
 </div>
 
     </div>

@@ -93,7 +93,10 @@
             position: relative;
             top:30px;
             text-align: center;
-            input {
+            form{
+                display:flex;
+                justify-content: center;
+                  input {
                 width: 70%;
                 padding:11px;
    -webkit-appearance: none;
@@ -130,6 +133,9 @@
                     opacity: 0.7;
                 }
             }
+
+            }
+
         }
     }
     .linie {
@@ -181,13 +187,17 @@
                 text-align: center;
             }
            .buttons{
+form{
+display:flex;
+justify-content: center;
+     input {
 
-             input {
-                 margin:0 auto;
-                width: 80%;
                  -webkit-appearance: none;
                  border-radius: 0
             }
+
+}
+
            }
         }
     }
@@ -207,11 +217,13 @@
                 right: 30px;
                 display: flex;
 
-                input {
+               form{
+                    input {
                     width:150px;
                      -webkit-appearance: none;
                  border-radius: 0
                 }
+               }
             }
         }
     }
@@ -232,10 +244,13 @@
             .buttons {
                 display: flex;
 
-                input {
-                    width: 240px;
+                form{
+
+                    input {
+                    width: 200px;
                      -webkit-appearance: none;
                  border-radius: 0
+                }
                 }
             }
         }

@@ -14,8 +14,10 @@ value:any=''
   toNav(){
     document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
   }
-  getData(){
-    this.value='';
+  sendData(f:any){
+    console.log(f.value)
+    this.value=''
+
   }
 
 toHome(){
