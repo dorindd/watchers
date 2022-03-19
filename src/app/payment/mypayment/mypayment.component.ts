@@ -110,7 +110,7 @@ this.formular1=new FormGroup({
     console.log(data)
 
   }
-  resetnr:any
+  resetnr:any[]=[] // solve error with typescript( reading 'lenght')
   payNow(pageName1: string, pageName: string) {
 
     this.service.collection=[];
