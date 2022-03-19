@@ -90,10 +90,14 @@
             }
         }
         .buttons {
+            position: relative;
+            top:30px;
             text-align: center;
             input {
-                width: 60%;
-                height: 40px;
+                width: 70%;
+                padding:11px;
+   -webkit-appearance: none;
+                 border-radius:0;
                 border: none;
                 outline: none;
                 background-color: white;
@@ -114,10 +118,12 @@
             }
             button {
                 width: 30px;
-                height: 40px;
+                padding:11px;
+
                 border: none;
                 outline: none;
-                background-color: black;
+
+                 background-color: black;
                 color: white;
                 text-transform: uppercase;
                 &:hover {
@@ -179,6 +185,8 @@
              input {
                  margin:0 auto;
                 width: 80%;
+                 -webkit-appearance: none;
+                 border-radius: 0
             }
            }
         }
@@ -200,7 +208,9 @@
                 display: flex;
 
                 input {
-                    width: 200px;
+                    width:150px;
+                     -webkit-appearance: none;
+                 border-radius: 0
                 }
             }
         }
@@ -224,6 +234,8 @@
 
                 input {
                     width: 240px;
+                     -webkit-appearance: none;
+                 border-radius: 0
                 }
             }
         }
