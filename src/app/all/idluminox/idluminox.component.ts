@@ -58,6 +58,9 @@ tops=true
     this.share.addToCollection(item)
 
   }
+  addFavorite(item: any) {
+    this.share.addToCollection1(item)
 
+  }
 
 }

@@ -58,5 +58,10 @@ tops=true;
 
   }
 
+  addFavorite(item: any) {
+    this.share.addToCollection1(item)
+
+  }
+
 
 }

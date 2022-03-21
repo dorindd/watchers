@@ -27,6 +27,8 @@ const routes: Routes = [
   {path:'new',loadChildren:()=>import('./new/new.module').then(m=>m.NewModule)},
   {path:'contact',loadChildren:()=>import('./contact/contact.module').then(m=>m.ContactModule)},
   { path:'thanks',loadChildren:()=>import('./thanks/thanks.module').then(m=>m.ThanksModule)},
+  {path:'favorite',loadChildren:()=>import('./favorite/favorite.module').then(m=>m.FavoriteModule)}
+
 
 ];
 

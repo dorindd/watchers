@@ -14,6 +14,8 @@ show1=true
  show2=false
  show3=false;
   panelOpenState = false;
+
+
   constructor(private share:DataService,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -55,7 +57,14 @@ show1=true
   }
 
   addColection(item:any){
-    this.share.addToCollection(item)
+
+   this.share.addToCollection(item)
+
+
+  }
+
+  addFavorite(item: any) {
+    this.share.addToCollection1(item)
 
   }
 

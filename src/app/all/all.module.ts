@@ -53,7 +53,9 @@ import { FooterModule } from '../footer/footer.module';
     MatExpansionModule,
     MatButtonModule,
     BannerModule,
-    FooterModule
+    FooterModule,
+   
+
 
   ]
 

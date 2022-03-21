@@ -126,17 +126,25 @@
                 color: $mycolor;
                 cursor: pointer;
             }
+.favorite{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:1px solid white;
+    text-align: center;
+    font-size: 11px;
+     -webkit-appearance: none;
+}
+
         }
 
         .mylogo3 {
             position: relative;
 
             font-size: 25px;
-            margin-left: 2px;
+            margin-left:15px;
 
-            span {
-                font-size: 14px;
-            }
         }
     }
 
@@ -249,6 +257,10 @@
                     position: relative;
                    top:30px;
                     font-size: 10px;
+                    .favorite{
+
+                       -webkit-appearance: none;
+                    }
                 }
                 .mylogo3 {
                     font-size: 17px;
@@ -312,6 +324,7 @@
             position: relative;
             bottom:19px;
         }
+       
 
 
 }

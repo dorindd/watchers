@@ -6,7 +6,12 @@ import { BehaviorSubject, Subject } from 'rxjs';
 })
 export class DataService {
 collection:any=[]
-itemNumber=new BehaviorSubject<any>([]);
+ itemNumber=new BehaviorSubject<any>([]);
+
+
+
+
+
 allPayment=new BehaviorSubject<any>([]);
 
 
@@ -1748,7 +1753,15 @@ quantity: 1,
     return this.watchnew
   }
 
+
+  collection1:any=[]
+  getCollection1(){
+    return this.collection1
+  }
   constructor() { }
+
+
+
 
   addToCollection(item:any){
     if(this.collection.indexOf(item)!== -1){
@@ -1756,8 +1769,50 @@ quantity: 1,
     }
     this.collection.push(item);
     localStorage.setItem('token1', JSON.stringify(this.collection));
-    this.itemNumber.next(this.collection)
+     this.itemNumber.next(this.collection)
   }
+
+
+
+itemFavorite=new BehaviorSubject<any>([]);
+
+  addToCollection1(item:any){
+    if(this.collection1.indexOf(item)!== -1){
+      return
+    }
+    this.collection1.push(item);
+
+    this.itemFavorite.next(this.collection1)
+
+
+  }
+
+
+
+
+
+
+
+  removeFromFavorite(item: any) {
+
+    this.collection1.splice(this.collection1.indexOf(item), 1);
+
+
+    this.itemFavorite.next(this.collection1)
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   removeFromCollection(item:any){
 
@@ -1770,6 +1825,8 @@ quantity: 1,
   getDataFromLocalSTorage() {
     this.collection = JSON.parse(localStorage.getItem('token1')!); // local storage
   }
+
+
  getProduct(id:any){
    return this.xerix.find(xerix=>xerix.id===id)
 

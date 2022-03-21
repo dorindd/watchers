@@ -23,7 +23,9 @@ export class LogoComponent implements OnInit {
   welcome:any
 
   data: any = true
-  user: any=true
+  user: any=true;
+  myFavorite:any=0
+
 
   constructor(public share: SharedataService, private route: Router, private service: DataService, private fireauth: AngularFireAuth) {
 
@@ -41,13 +43,18 @@ export class LogoComponent implements OnInit {
 
   }
 
-  allreset: any = 0
+  allreset: any =0
+
 
   ngOnInit(): void {
 
+    this.service.itemFavorite.subscribe((data:any)=>{
+      this.myFavorite = data.length
+    })
+
     this.welcome=this.share.getDataWelcome();
 
-   
+
 
     this.service.itemNumber.subscribe(data => {
       this.allreset = data
@@ -72,20 +79,7 @@ export class LogoComponent implements OnInit {
 
     })
 
-
-
-
-
-
-
-
-
-
-
   }
-
-
-
 
 
   getProduct() {
@@ -115,5 +109,11 @@ export class LogoComponent implements OnInit {
 
   getHome() {
     document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  getFavorite(pageName1:string , pageName:string){
+    if(this.myFavorite>0){this.route.navigate([`${pageName1}`])}
+    else { this.route.navigate([`${pageName}`])}
+
   }
 }

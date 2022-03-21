@@ -22,7 +22,9 @@
     <p class="txt">{{watch.name}}</p>
 
     <p class="price">{{watch.price | currency}}</p>
-    <button mat-raised-button (click)="addColection(watch)">Add to Card</button>
+    <button class='btn-cart' mat-raised-button (click)="addColection(watch)">Add to Cart</button><br>
+
+    <button class='btn-fav' (click)="addFavorite(watch)"><i class="fa fa-heart myicon" aria-hidden="true"></i> Save to Wishlist</button>
 <div class="icons">
   <i class="fa fa-plane icon" aria-hidden="true"></i>
   <i class="fa fa-calendar icon" aria-hidden="true"></i>

@@ -60,5 +60,10 @@ export class IdnewComponent implements OnInit {
 
   }
 
+  addFavorite(item: any) {
+    this.share.addToCollection1(item)
+
+  }
+
 
 }

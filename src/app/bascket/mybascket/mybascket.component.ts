@@ -57,7 +57,7 @@ this.total=data;
 
     })
 
-    this.collection=this.service.  getCollection()
+    this.collection=this.service.getCollection()
     this.totalPrice();
 
 
