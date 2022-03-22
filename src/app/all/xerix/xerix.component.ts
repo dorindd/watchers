@@ -14,5 +14,9 @@ collection:any[]=[]
   ngOnInit(): void {
     this.collection=this.service.getXerix();
   }
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
 
 }

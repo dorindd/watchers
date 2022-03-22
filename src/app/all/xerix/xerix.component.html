@@ -3,7 +3,7 @@
 <app-mybanner></app-mybanner>
 <div class="mycontainer">
 
-<p class="txt">Xeric Watches</p>
+<p class="txt" >Xeric Watches</p>
  <div class="mytxt">
 <p class="txt1">Reimagining time and space, Xeric pushes the boundaries of watch design and time displays. They are
   passionate about creating time machines that you've never seen before while still keeping them affordable.
@@ -18,8 +18,8 @@ can't wait to see the future designs that come out of their time-traveling minds
 
   </p>
   </div>
-    <div class="container">
-        <div class="box" *ngFor="let item of collection" [routerLink]="['/all/xerix',item.id]">
+    <div class="container" >
+        <div class="box" *ngFor="let item of collection" [routerLink]="['/all/xerix',item.id]" (click)="getWatch1()">
 
 
 <img src="{{item.url[0]}}" alt="wtch seric">

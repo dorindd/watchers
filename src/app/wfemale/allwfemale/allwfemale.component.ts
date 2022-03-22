@@ -14,4 +14,9 @@ export class AllwfemaleComponent implements OnInit {
     this.collection = this.service.getWomens();
   }
 
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+
 }

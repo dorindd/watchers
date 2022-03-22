@@ -12,7 +12,7 @@ women's watches. Shop for gold watches, leather watches, Swiss-made watches & mo
 
   </div>
   <div class="container">
-    <div class="box" *ngFor="let item of collection" [routerLink]="['/wfemale/allwfemale',item.id]">
+    <div class="box" *ngFor="let item of collection" [routerLink]="['/wfemale/allwfemale',item.id]"(click)="getWatch1()">
 
 
       <img src="{{item.url[0]}}" alt="wtch seric">
@@ -30,7 +30,7 @@ women's watches. Shop for gold watches, leather watches, Swiss-made watches & mo
         <i class="fa fa-star myicon" aria-hidden="true"></i>
         <i class="fa fa-star myicon" aria-hidden="true"></i>
       </div>
-   
+
 
     </div>
 

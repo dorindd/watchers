@@ -13,5 +13,9 @@ export class TimesComponent implements OnInit {
   ngOnInit(): void {
     this.collection = this.service.getTimes();
   }
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
 
 }

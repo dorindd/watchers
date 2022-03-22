@@ -13,5 +13,10 @@ export class GshockComponent implements OnInit {
     this.collection = this.service.getGshock();
   }
 
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+
 
 }

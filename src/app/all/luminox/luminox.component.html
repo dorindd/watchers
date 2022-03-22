@@ -16,7 +16,7 @@ Made and were developed for use by Navy SEALs.
 
   </div>
   <div class="container">
-    <div class="box" *ngFor="let item of collection" [routerLink]="['/all/luminox',item.id]">
+    <div class="box" *ngFor="let item of collection" [routerLink]="['/all/luminox',item.id]" (click)="getWatch1()">
 
 
       <img src="{{item.url[0]}}" alt="wtch seric">
@@ -34,7 +34,7 @@ Made and were developed for use by Navy SEALs.
         <i class="fa fa-star myicon" aria-hidden="true"></i>
         <i class="fa fa-star myicon" aria-hidden="true"></i>
       </div>
-     
+
 
     </div>
 

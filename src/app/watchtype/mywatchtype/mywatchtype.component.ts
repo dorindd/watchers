@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-mywatchtype',
   templateUrl: './mywatchtype.component.html',
@@ -11,5 +12,23 @@ export class MywatchtypeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  getWatch1(){
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+  getWatch2(){
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+  getWatch3(){
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+  getWatch4(){
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+
 
 }

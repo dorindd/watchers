@@ -17,7 +17,7 @@ of the kinetic energy you generate while wearing them.
     </p>
   </div>
   <div class="container">
-    <div class="box" *ngFor="let item of collection" [routerLink]="['/all/archetype',item.id]">
+    <div class="box" *ngFor="let item of collection" [routerLink]="['/all/archetype',item.id]" (click)="getWatch1()">
 
 
       <img src="{{item.url[0]}}" alt="wtch seric">

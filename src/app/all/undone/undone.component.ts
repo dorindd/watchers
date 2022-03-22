@@ -15,4 +15,9 @@ export class UndoneComponent implements OnInit {
     this.collection = this.service.getUndone();
   }
 
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+
 }

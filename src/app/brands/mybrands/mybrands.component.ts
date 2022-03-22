@@ -12,4 +12,17 @@ export class MybrandsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+  getWatch2() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+  getWatch3() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+
 }

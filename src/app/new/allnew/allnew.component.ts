@@ -14,4 +14,9 @@ export class AllnewComponent implements OnInit {
     this.collection = this.service.getNew();
   }
 
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
+
 }

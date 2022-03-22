@@ -13,5 +13,9 @@ export class LuminoxComponent implements OnInit {
   ngOnInit(): void {
     this.collection = this.service.getLuminox();
   }
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
 
 }

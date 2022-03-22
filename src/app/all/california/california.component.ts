@@ -13,5 +13,9 @@ export class CaliforniaComponent implements OnInit {
   ngOnInit(): void {
     this.collection = this.service.getCalifornia();
   }
+  getWatch1() {
+    document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
+
+  }
 
 }

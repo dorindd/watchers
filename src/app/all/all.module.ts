@@ -26,6 +26,7 @@ import { FooterModule } from '../footer/footer.module';
 
 
 
+
 @NgModule({
   declarations: [
     MaleComponent,
@@ -54,7 +55,8 @@ import { FooterModule } from '../footer/footer.module';
     MatButtonModule,
     BannerModule,
     FooterModule,
-   
+
+
 
 
   ]
