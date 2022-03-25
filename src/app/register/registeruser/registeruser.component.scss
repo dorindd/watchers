@@ -1,3 +1,7 @@
+// :host{
+//     display:block;
+//     height:800px;
+// }
 
 
 
@@ -51,7 +55,7 @@
 
  display: block;
     position: relative;
-    top: 30px;
+    top:30px;
 
     width: 30%;
      min-height:560px;
@@ -220,12 +224,9 @@
 
     }
 }
-.spatiu{
 
-    width:100%;
-    height:50px;
-}
 @media screen and (max-width: 575px) {
+
 
 
 
@@ -237,8 +238,10 @@
 
     .container {
 
+
+
         width: 100%;
-        height: 580px;
+        height: 560px;
 
         form {
             .btn-btn {
@@ -256,13 +259,13 @@
             }
         }
     }
-    .spatiu{
-        height:0;
+
     }
-    }
+
 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
 
 
 
@@ -292,10 +295,14 @@
             }
         }
         }
+        }
 
-    }
+
+
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
 
 
 
@@ -306,7 +313,8 @@
     }
 
     .container {
-
+position: relative;
+top:50px;
         width: 70%;
         height: 580px;
 
@@ -325,5 +333,8 @@
                 width: 50%;
             }
         }
-    }}
+    }
+    }
+
+
 

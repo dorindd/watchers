@@ -120,38 +120,33 @@
         .hover {
             outline: none;
             z-index: 1;
-             display: flex;
+            display: flex;
 
             & :hover {
                 color: $mycolor;
                 cursor: pointer;
             }
-            .favorite{
-                display:block;
+            .favorite {
+                display: block;
                 position: relative;
                 bottom:4px;
 
-  .numberfav{
-                position: absolute;
+                .numberfav {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
 
-                transition: 0.2s;
-                font-weight: 500;
-margin:0 auto;
-width: 20px;
-                height: 20px;
+                    font-weight: 500;
+                    margin: 0 auto;
 
-                font-size: 12px;
-                border-radius: 50%;
-                color: white;
-                background: orangered;
-                display: inline-block;
-                text-align: center;
-              
+                    font-size: 12px;
+                    border-radius: 50%;
+                    color: white;
+                    background: orangered;
+                    display: inline-block;
+                    text-align: center;
+                }
             }
-
-
-            }
-
         }
 
         .mylogo3 {

@@ -1,7 +1,12 @@
+
+
 .mycontainer{
+ display:block;
+
+
 .txt{
     position: relative;
-   bottom:40px;
+  bottom:40px;
     text-align: center;
     font-size:2em;
     font-weight:700;
@@ -10,7 +15,7 @@
     position: relative;
  bottom:30px;
     text-align: center;
-    line-height:10px;
+    line-height:14px;
     .txt1{
         text-align: center;
         letter-spacing: 1px;
@@ -23,16 +28,21 @@
 .container {
 
 
-    width: 100%;
+    width:100%;
+
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap:40px;
+
     .box {
-        display: inline-block;
-        position: relative;
-        margin: 10px;
+      display: inline-block;
+     position: relative;
+
+        margin-top:20px;
         width: 400px;
-        height: 450px;
+        height:400px;
 
 
 img{
@@ -90,100 +100,126 @@ img{
     }
 
 
+
 }
 }
 
-@media screen and (max-width: 575px){
+
+@media screen and (max-width: 575px) {
 .mycontainer{
-    .txt{
-        font-size:1.2em;
-    }
+
+
+.txt{
+    font-size:20px;
+}
     .mytxt{
-         line-height:15px;
-        .txt1{
-            font-size:12px;
-        }
-        .txt2{
-            font-size:12px;
-        }
+.txt1{
+        font-size:11px;
+        line-height:20px;
+
+    }
     }
 
-    .container{
-        .box{
-            width: 300px;
-        height:350px;
-            margin:2px;
-            img{
-                width:250px;
-            }
-        }
+.container{
+    .box{
+        margin:5px;
+        height:200px;
+        margin-top:20px;
+ img{
+        width:170px;
     }
+    }
+
+
 }
 
+}
 
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
 .mycontainer{
-    .txt{
-        font-size:1.2em;
-    }
+.txt{
+    font-size:20px;
+}
     .mytxt{
-         line-height:15px;
-        .txt1{
-            font-size:12px;
-        }
-        .txt2{
-            font-size:12px;
-        }
+.txt1{
+        font-size:14px;
+        line-height:20px;
+
+    }
     }
 
-    .container{
-        .box{
-            width: 200px;
-        height:300px;
-            margin:10px;
-            img{
-                width:200px;
-            }
-        }
+.container{
+    .box{
+        margin:10px;
+        width:23%;
+        height:200px;
+        margin-top:20px;
+ img{
+        width:170px;
     }
+    }
+
+
 }
+
+}
+
+
+
+
+
 
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
 
-.mycontainer{
-    .txt{
-        font-size:1.4em;
-    }
+
+    .mycontainer{
+
+.txt{
+    font-size:20px;
+}
     .mytxt{
-         line-height:15px;
-        .txt1{
-            font-size:15px;
-        }
-        .txt2{
-            font-size:15px;
-        }
+.txt1{
+        font-size:14px;
+        line-height:20px;
+
+    }
     }
 
-    .container{
-        .box{
-            width: 240px;
-        height:350px;
-            margin:10px;
-            img{
-                width:230px;
-            }
-        }
+.container{
+    .box{
+
+        width:23%;
+        height:200px;
+        margin-top:10%;
+ img{
+        width:170px;
     }
+    }
+
+
+}
+
 }
 
 
 
+
+
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

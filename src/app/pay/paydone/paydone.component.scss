@@ -99,14 +99,24 @@
 
 }
 
-.id{
+.details{
     position: relative;
     top:190px;
     text-align: center;
     font-size:20px;
-    font-weight: lighter;
-    color:grey;
+  
+
+
 }
+
+ .id{
+        color:grey;
+    }
+ #allid{
+        font-size:16px;
+        font-weight:800px;
+        color:black;
+    }
 
 .btn-btn {
    text-align: center;
