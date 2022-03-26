@@ -50,7 +50,11 @@ export class LogoComponent implements OnInit {
 
     this.service.itemFavorite.subscribe((data:any)=>{
       this.myFavorite = data.length
+
+
     })
+
+
 
     this.welcome=this.share.getDataWelcome();
 
@@ -83,12 +87,18 @@ export class LogoComponent implements OnInit {
 
 
   getProduct() {
+
+
+
     if (this.number <= 1) {
       this.show1 = true
     }
     else {
       this.show1 = false;
     }
+
+
+
   }
   getProduct1() {
     if (this.number >= 2) {

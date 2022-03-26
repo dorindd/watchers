@@ -1775,12 +1775,14 @@ quantity: 1,
 
 
 itemFavorite=new BehaviorSubject<any>([]);
-
+//fav
   addToCollection1(item:any){
     if(this.collection1.indexOf(item)!== -1){
       return
     }
     this.collection1.push(item);
+
+    
 
     this.itemFavorite.next(this.collection1)
 

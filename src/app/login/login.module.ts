@@ -7,6 +7,9 @@ import { FormsModule } from '@angular/forms';
 import { RegisterModule } from '../register/register.module';
 import { FooterModule } from '../footer/footer.module';
 import { MottoModule } from '../motto/motto.module';
+import { HeaderModule } from '../header/header.module';
+import { NavbarModule } from '../navbar/navbar.module';
+import { BrandsModule } from '../brands/brands.module';
 
 
 
@@ -27,7 +30,10 @@ import { MottoModule } from '../motto/motto.module';
     FormsModule,
     RegisterModule,
     FooterModule,
-    MottoModule
+    MottoModule,
+    HeaderModule,
+    NavbarModule,
+    BrandsModule
 
 
 

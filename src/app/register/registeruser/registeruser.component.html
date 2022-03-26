@@ -1,17 +1,13 @@
 
 
 
-
-<div class="container-fluid" routerLink="/">
-  <span class="logo"><span class="first">DD</span>watches</span>
-
-</div>
-
+<app-logo></app-logo>
+<app-mynavbar></app-mynavbar>
 <div class="container">
 
 
 
-  <p class="txt">Create a account</p>
+  <p class="txt">Create  Account</p>
   <form>
 
     <div class="col">
@@ -23,16 +19,9 @@
         name="password" [(ngModel)]="password" required>
       <span class="field-icon " (click)="showPsd()"><i class="fa"
           [ngClass]="{'fa-eye':show,'fa-eye-slash':!show}"></i></span>
+          <button class="btn" (click)="register()">Register</button>
 
     </div>
-
-
-
-
-
-
-
- <button class="btn" (click)="register()">Register</button>
 
     <p class='mytxt'>Or,Continue with</p>
 
@@ -46,6 +35,6 @@
   </form>
 
 </div>
-
+<app-mybrands></app-mybrands>
 <app-mymotto></app-mymotto>
 <app-myfooter></app-myfooter>
