@@ -404,7 +404,7 @@ quantity: 1,
 
 
     quantity: 1},
-    { id: 3, url: ['assets/img/t7.jpg', 'assets/img/t8.jpg', 'assets/img/t9.jpg'], name: '', price:239 , rev: '3 Review',
+    { id: 3, url: ['assets/img/t7.jpg', 'assets/img/t8.jpg', 'assets/img/t9.jpg'], name:'Timex Expedition North Tide-Temp-Compass 43mm Olive', price:239 , rev: '3 Review',
 
       txt1: "Timex Expedition North Tide-Temp-Compass 43mm Olive date and calendar complication. The dial is reminiscent of vintage timepieces with a convex domed shape, hand-applied indices and big date frame while the subdials display the current day of the week and current month",
       txt2: " Timex Expedition North Tide-Temp-Compass 43mm Olive built around a high-torque, Seiko VH31 movement with semi-sweeping secondshand. The caseback features engraved 50th anniversary commemorative artwork of the Apollo 11 mission patch.",
@@ -1102,10 +1102,10 @@ quantity: 1,
 
 
     quantity: 1 },
-    { id: 6, url: ['assets/img/u16.jpg', 'assets/img/u17.jpg', 'assets/img/u18.jpg'], name: 'UNDONE Disney Mickey Guess Who s Back Automatic', price: 280, rev: '3 Review',
+    { id: 6, url: ['assets/img/u16.jpg', 'assets/img/u17.jpg', 'assets/img/u18.jpg'], name: 'UNDONE Disney Mickey Guess Who s Back ', price: 280, rev: '3 Review',
 
-      txt1: "UNDONE Disney Mickey Guess Who s Back Automatic date and calendar complication. The dial is reminiscent of vintage timepieces with a convex domed shape, hand-applied indices and big date frame while the subdials display the current day of the week and current month",
-      txt2: " UNDONE Disney Mickey Guess Who s Back Automatic movement with semi-sweeping secondshand. The caseback features engraved 50th anniversary commemorative artwork of the Apollo 11 mission patch.",
+      txt1: "UNDONE Disney Mickey Guess Who s Back  date and calendar complication. The dial is reminiscent of vintage timepieces with a convex domed shape, hand-applied indices and big date frame while the subdials display the current day of the week and current month",
+      txt2: " UNDONE Disney Mickey Guess Who s Back movement with semi-sweeping secondshand. The caseback features engraved 50th anniversary commemorative artwork of the Apollo 11 mission patch.",
       txt3: "The straps are made from U.S. Horween leather which is ribbed and stitched to pay tribute to the articulated ridge-lines seen on space gloves.",
       txt4: "In honor of the year of the moon landing, only 1969 pieces of each Trappist-1 NASA Edition colorway will be made and each watch will be individually numbered.",
       txt5: "Movement:PTS LB-19 Multifunction, 20 Jewel ",
@@ -1782,7 +1782,7 @@ itemFavorite=new BehaviorSubject<any>([]);
     }
     this.collection1.push(item);
 
-    
+
 
     this.itemFavorite.next(this.collection1)
 
