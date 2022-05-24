@@ -1,170 +1,114 @@
- .txt{
-
-            text-align: center;
-font-family:'Bauer Bodoni',sherif;
-        color:black;
-        font-size:32px;
-        font-weight:700;
-  }
-.container{
-    width:100%;
-    min-height:50%;
-    display:block;
-    margin:0 auto;
-
-
-     display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-
-
-    .box{
-
+.txt {
+    text-align: center;
+    font-family: "Bauer Bodoni", sherif;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+}
+.container {
+    width: 100%;
+    min-height: 50%;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    .box {
         position: relative;
-          border: solid 1px rgba(4, 4, 4, 0.09);
-        width:20%;
-        height:300px;
-        margin:5px;
-
-
+        border: solid 1px rgba(4, 4, 4, 0.09);
+        width: 20%;
+        height: 300px;
+        margin: 5px;
         &:hover .btn-delate {
-            visibility:visible;
-
+            visibility: visible;
         }
-
-
-        img{
-
-
-            display:block;
-            margin:0 auto;
-            max-width:60%;
-             transform: scale(1);
-              transition: all 1s;
-              &:hover{
-                  transform: scale(1.2);
-              }
-
-
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 60%;
+            transform: scale(1);
+            transition: all 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         .btn-add {
             position: relative;
-             top:25px;
+            top: 25px;
             display: block;
-            margin:0 auto;
-border:solid 1px rgba(4, 4, 4, 0.09);
-            width:40%;
+            margin: 0 auto;
+            border: solid 1px rgba(4, 4, 4, 0.09);
+            width: 40%;
             height: 30px;
-
             color: grey;
- background:transparent;
+            background: transparent;
             letter-spacing: 1px;
-            font-weight:400;
-            font-size:10px ;
+            font-weight: 400;
+            font-size: 10px;
             text-transform: uppercase;
-
             outline: none;
             border-radius: 4px;
             transition: 0.2s;
-
-
             &:hover {
                 opacity: 0.9;
             }
         }
-        .btn-delate{
-
-            border:none;
+        .btn-delate {
+            border: none;
             outline: none;
-
             background-color: black;
-            color:white;
-            visibility:hidden;
-
+            color: white;
+            visibility: hidden;
         }
-
-         .txt {position: relative;
-            top:20px;
-            font-size:10px;
-            font-weight:550;
+        .txt {
+            position: relative;
+            top: 20px;
+            font-size: 10px;
+            font-weight: 550;
             text-align: center;
-            font-family:'Bauer Bodoni',sherif;
-        color:black;
-
-
-
-
+            font-family: "Bauer Bodoni", sherif;
+            color: black;
         }
     }
 }
-
 @media screen and (max-width: 575px) {
-
-    .container{
-        .box{
-            width:80%;
+    .container {
+        .box {
+            width: 80%;
         }
     }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-    .container{
-        .box{
-            width:35%;
-            height:280px;
-
-            .btn-add{
+    .container {
+        .box {
+            width: 35%;
+            height: 280px;
+            .btn-add {
                 position: relative;
-                top:40px;
-                width:50%;
+                top: 40px;
+                width: 50%;
             }
-            .txt{font-size:9px;}
+            .txt {
+                font-size: 9px;
+            }
         }
     }
-
-
-
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-
-.container{
-        .box{
-            width:31%;
-            height:320px;
-
-
-            .btn-add{
+    .container {
+        .box {
+            width: 31%;
+            height: 320px;
+            .btn-add {
                 position: relative;
-                top:40px;
-                width:50%;
+                top: 40px;
+                width: 50%;
             }
-            .txt{font-size:9px;}
+            .txt {
+                font-size: 9px;
+            }
         }
     }
-
-
-
 }

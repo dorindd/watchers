@@ -8,15 +8,10 @@ import { DataService } from 'src/app/data.service';
 export class GshockComponent implements OnInit {
   collection: any[] = []
   constructor(private service: DataService,) { }
-
   ngOnInit(): void {
     this.collection = this.service.getGshock();
   }
-
   getWatch1() {
     document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
-
   }
-
-
 }

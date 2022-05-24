@@ -1,27 +1,22 @@
 <app-logo></app-logo>
 <app-mynavbar></app-mynavbar>
 <app-mybanner></app-mybanner>
-
 <div class="container mycontainer">
-    <p class='txt1'>Contact Us</p>
+  <p class='txt1'>Contact Us</p>
   <p class='txt2'>Trouble with your order? Drop us a line below, and we'll respond to your email within 24 hours
     Monday-Friday. On weekends and holidays we like to venture off the grid, but we'll respond by the next business day.
   </p>
   <div class="row">
     <div class="col-xl-12">
-      <form  method="POST" action="https://formsubmit.co/dorian709@yahoo.co.uk"
-        enctype="multipart/form-data"><br>
+      <form method="POST" action="https://formsubmit.co/dorian709@yahoo.co.uk" enctype="multipart/form-data"><br>
         <input type="text" name="name" placeholder="Name" required><br>
         <input type="email" name="email" placeholder="Your email address" required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
         <textarea name="message" placeholder="Write  a message"></textarea><br>
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value='https://ddwatches.netlify.app/thanks/you'>
-
         <button class='btn-btn' type="submit" (click)='getForm()'>SEND</button>
-</form>
-
-     
+      </form>
     </div>
   </div>
 </div>

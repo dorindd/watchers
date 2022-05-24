@@ -2,48 +2,32 @@
 <app-mynavbar></app-mynavbar>
 <app-mybanner></app-mybanner>
 <div class="mycontainer">
-
-<p class="txt" >Xeric Watches</p>
- <div class="mytxt">
-<p class="txt1">Reimagining time and space, Xeric pushes the boundaries of watch design and time displays. They are
-  passionate about creating time machines that you've never seen before while still keeping them affordable.
-
-
-
-
-</p>
-  <p class="txt2">
-Xeric was the most funded mechanical watch brand in crowdfunding history with the launch of their first watch, and we
-can't wait to see the future designs that come out of their time-traveling minds.
-
-  </p>
+  <p class="txt">Xeric Watches</p>
+  <div class="mytxt">
+    <p class="txt1">Reimagining time and space, Xeric pushes the boundaries of watch design and time displays. They are
+      passionate about creating time machines that you've never seen before while still keeping them affordable.
+    </p>
+    <p class="txt2">
+      Xeric was the most funded mechanical watch brand in crowdfunding history with the launch of their first watch, and
+      we
+      can't wait to see the future designs that come out of their time-traveling minds.
+    </p>
   </div>
-    <div class="container" >
-        <div class="box" *ngFor="let item of collection" [routerLink]="['/all/xerix',item.id]" (click)="getWatch1()">
-
-
-<img src="{{item.url[0]}}" alt="wtch seric">
-<div class="overlay">
-<img src="{{item.url[1]}}" alt="wtch seric">
-</div>
-
-
-
- <p class="name">{{item.name}}</p>
- <p class="price">{{item.price | currency}}</p>
- <div class="star">
-     <i class="fa fa-star myicon" aria-hidden="true"></i>
-     <i class="fa fa-star myicon" aria-hidden="true"></i>
-     <i class="fa fa-star myicon" aria-hidden="true"></i>
-     <i class="fa fa-star myicon" aria-hidden="true"></i>
- </div>
-
-
-        </div>
-
-</div>
-
-
-
+  <div class="container">
+    <div class="box" *ngFor="let item of collection" [routerLink]="['/all/xerix',item.id]" (click)="getWatch1()">
+      <img src="{{item.url[0]}}" alt="wtch seric">
+      <div class="overlay">
+        <img src="{{item.url[1]}}" alt="wtch seric">
+      </div>
+      <p class="name">{{item.name}}</p>
+      <p class="price">{{item.price | currency}}</p>
+      <div class="star">
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+        <i class="fa fa-star myicon" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
 </div>
 <app-myfooter></app-myfooter>

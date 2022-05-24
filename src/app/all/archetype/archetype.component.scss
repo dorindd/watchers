@@ -1,226 +1,148 @@
-
-
-
-.mycontainer{
- display:block;
-
-
-.txt{
-    position: relative;
-  bottom:40px;
-    text-align: center;
-    font-size:2em;
-    font-weight:700;
-}
-.mytxt{
-    position: relative;
- bottom:30px;
-    text-align: center;
-    line-height:4px;
-    .txt1{
-        text-align: center;
-        letter-spacing: 1px;
-
-    }
-
-
-}
-
-.container {
-
-
-    width:100%;
-
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:40px;
-
-    .box {
-      display: inline-block;
-     position: relative;
-
-        margin-top:20px;
-        width: 400px;
-        height:400px;
-
-
-img{
-    position: relative;
-
-        width:350px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-     object-fit:cover;
-
-}
-.overlay{
-     position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  &:hover {
-       opacity: 1;
-  }
-}
-
-
-
-    .name{
-        text-decoration: none;
-        font-size: 15px;
-        color: black;
-        display: block;
-        text-align: center;
-
-    }
-.price{
-    position: relative;
-    bottom:10px;
-    text-align: center;
-}
-
-    }
-    .star{
+.mycontainer {
+    display: block;
+    .txt {
         position: relative;
-    bottom:15px;
+        bottom: 40px;
         text-align: center;
-        color:gold;
-        font-size:20px;
-        .myicon{
-            margin-left:1px;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .mytxt {
+        position: relative;
+        bottom: 30px;
+        text-align: center;
+        line-height: 4px;
+        .txt1 {
+            text-align: center;
+            letter-spacing: 1px;
         }
     }
-
-
-
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        .box {
+            display: inline-block;
+            position: relative;
+            margin-top: 20px;
+            width: 400px;
+            height: 400px;
+            img {
+                position: relative;
+                width: 350px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                object-fit: cover;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s ease;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .name {
+                text-decoration: none;
+                font-size: 15px;
+                color: black;
+                display: block;
+                text-align: center;
+            }
+            .price {
+                position: relative;
+                bottom: 10px;
+                text-align: center;
+            }
+        }
+        .star {
+            position: relative;
+            bottom: 15px;
+            text-align: center;
+            color: gold;
+            font-size: 20px;
+            .myicon {
+                margin-left: 1px;
+            }
+        }
+    }
 }
-}
-
-
 @media screen and (max-width: 575px) {
-.mycontainer{
-
-
-.txt{
-    font-size:20px;
-}
-    .mytxt{
-.txt1{
-        font-size:11px;
-        line-height:20px;
-
+    .mycontainer {
+        .txt {
+            font-size: 20px;
+        }
+        .mytxt {
+            .txt1 {
+                font-size: 11px;
+                line-height: 20px;
+            }
+        }
+        .container {
+            .box {
+                margin: 5px;
+                height: 200px;
+                margin-top: 20px;
+                img {
+                    width: 170px;
+                }
+            }
+        }
     }
-    }
-
-.container{
-    .box{
-        margin:5px;
-        height:200px;
-        margin-top:20px;
- img{
-        width:170px;
-    }
-    }
-
-
 }
-
-}
-
-}
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-.mycontainer{
-.txt{
-    font-size:20px;
-}
-    .mytxt{
-.txt1{
-        font-size:14px;
-        line-height:20px;
-
+    .mycontainer {
+        .txt {
+            font-size: 20px;
+        }
+        .mytxt {
+            .txt1 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .container {
+            .box {
+                margin: 10px;
+                width: 23%;
+                height: 200px;
+                margin-top: 40px;
+                img {
+                    width: 170px;
+                }
+            }
+        }
     }
-    }
-
-.container{
-    .box{
-        margin:10px;
-        width:23%;
-        height:200px;
-        margin-top:40px;
- img{
-        width:170px;
-    }
-    }
-
-
 }
-
-}
-
-
-
-
-
-
-}
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-    .mycontainer{
-
-.txt{
-    font-size:20px;
-}
-    .mytxt{
-.txt1{
-        font-size:14px;
-        line-height:20px;
-
+    .mycontainer {
+        .txt {
+            font-size: 20px;
+        }
+        .mytxt {
+            .txt1 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .container {
+            .box {
+                width: 23%;
+                height: 200px;
+                margin-top: 10%;
+                img {
+                    width: 170px;
+                }
+            }
+        }
     }
-    }
-
-.container{
-    .box{
-
-        width:23%;
-        height:200px;
-        margin-top:10%;
- img{
-        width:170px;
-    }
-    }
-
-
 }
-
-}
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -5,13 +5,15 @@ import { RouterModule } from '@angular/router';
 
 
 
+
 @NgModule({
   declarations: [
     MynavbarComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+
   ]
   ,exports:[MynavbarComponent]
 })

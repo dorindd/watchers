@@ -1,172 +1,89 @@
-
 <div class=" container-fluid">
   <p routerLink="/" class="logo"><span class="first">DD</span>watches</p>
-
 </div>
-
-
- <div class="allctn">
-
-   <div class="container">
-     <div class="box">
-<p class="title"><span class="span">1</span> Billig Address</p>
-
-<form [formGroup]="formular">
-  <label for="name"><span class="star">*</span>Full Name</label><br>
-  <input type="text" name="name" id="name" placeholder="Michal Smith" required formControlName="name" #name
-    minlength="3"><br>
-  <label for="email"><span class="star">*</span>Email</label><br>
-  <input type="email" name="email" id="email" placeholder="mSmith@yahoo.com" required email formControlName="email"
-    #email minlength="4" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
-  <label for="address"><span class="star">*</span>Address</label><br>
-  <input type="text" name="address" id="address" placeholder="St. Mark’s Place" required formControlName="address"
-    #address minlength="3"><br>
-  <label for="city"> <span class="star">*</span>City</label><br>
-  <input type="text" name="city" id="city" placeholder="New York City" required formControlName="city" #city
-    minlength="3"><br>
-  <label for="code"><span class="star">*</span>Post Code</label><br>
-  <input type="text" name="code" id="code" class="myinput" placeholder="59877" required formControlName="code" #code
-    minlength="4">
-</form>
-
-
-
-     </div>
-
-
-
-
-
-
-
-
-
-     <div class="box">
-<p class="title"><span class="span">2</span> Payment</p>
-<p class="cards">Accepted Cards</p>
-<div class="icon-container">
-  <i class="fa fa-cc-visa mycards" style="color: navy"></i>
-  <i class="fa fa-cc-amex mycards" style="color: blue"></i>
-  <i class="fa fa-cc-mastercard mycards" style="color: red"></i>
-  <i class="fa fa-btc mycards" style="color: orange" aria-hidden="true"></i>
-  <i class="fa fa-cc-jcb mycards" style="color: blue" aria-hidden="true"></i>
-</div>
-
-
-
-
-
-
-<form [formGroup]="formular1" (ngSubmit)="onSubmit1()">
-
-  <label for="name"><span class="star">*</span>Card Owner</label><br>
-  <input type="text" name=name id=name required formControlName="name" placeholder="Card Owner Name"><br>
-
-
-
-  <label for="number"><span class="star">*</span>Card number</label><br>
-  <input type="text" name="number" required formControlName="number" placeholder=" Valid Card Number"><br>
-
-  <label for="date"><span class="star">*</span>Expired Date</label><br>
-  <input class="myinput" type="text" name="date" required formControlName="date" placeholder="MM/YY"><br>
-
-
-  <label for="code"><span class="star">*</span>CV Code (CVC)</label><br>
-  <input class="myinput" type="text" name=code id=name required formControlName="code" placeholder="CVC"><br>
-
-</form>
-
-
-
-     </div>
-
-<div class="box oneb">
-
-<div class="mycontainer">
-
-
-  <div class="box1 ">
-
-
-
-
-
-
-
-
-
-
-
-    <p class="title"><span class="span">3</span> Select Delivery Options</p>
-    <div class="transport">
-      <p class="title">Shipping Method</p>
-      <div class="selection">
-        <input type="radio" id="pick" name="delivery" value="store1" (click)="removeTransport()" checked [disabled]="!name.value || !email.value || !address.value || !city.value ||
-          !code.value" />
-
-        <label for="pick">Collect from Store</label><span class="currency">{{0|currency}}</span><br />
-
-
-
-        <input type="radio" id="pick1" name="delivery" value="store2" (click)="addStandard()" [disabled]="!name.value || !email.value || !address.value || !city.value
-              ||!code.value">
-
-        <label for="pick1">Standard Shipping</label><span class="currency">{{3|currency}}</span><br />
-
-
-        <input type="radio" id="pick1" name="delivery" value="store2" (click)="addTransport()" [disabled]="!name.value || !email.value || !address.value || !city.value
-           ||!code.value" />
-
-        <label for="pick1">Priority Shipping </label><span class="mycurrency">{{10|currency}}</span>
-
-      </div>
-
-
-
+<div class="allctn">
+  <div class="container">
+    <div class="box">
+      <p class="title"><span class="span">1</span> Billig Address</p>
+      <form [formGroup]="formular">
+        <label for="name"><span class="star">*</span>Full Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Michal Smith" required formControlName="name" #name
+          minlength="3"><br>
+        <label for="email"><span class="star">*</span>Email</label><br>
+        <input type="email" name="email" id="email" placeholder="mSmith@yahoo.com" required email
+          formControlName="email" #email minlength="4" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+        <label for="address"><span class="star">*</span>Address</label><br>
+        <input type="text" name="address" id="address" placeholder="St. Mark’s Place" required formControlName="address"
+          #address minlength="3"><br>
+        <label for="city"> <span class="star">*</span>City</label><br>
+        <input type="text" name="city" id="city" placeholder="New York City" required formControlName="city" #city
+          minlength="3"><br>
+        <label for="code"><span class="star">*</span>Post Code</label><br>
+        <input type="text" name="code" id="code" class="myinput" placeholder="59877" required formControlName="code"
+          #code minlength="4">
+      </form>
     </div>
-
-
+    <div class="box">
+      <p class="title"><span class="span">2</span> Payment</p>
+      <p class="cards">Accepted Cards</p>
+      <div class="icon-container">
+        <i class="fa fa-cc-visa mycards" style="color: navy"></i>
+        <i class="fa fa-cc-amex mycards" style="color: blue"></i>
+        <i class="fa fa-cc-mastercard mycards" style="color: red"></i>
+        <i class="fa fa-btc mycards" style="color: orange" aria-hidden="true"></i>
+        <i class="fa fa-cc-jcb mycards" style="color: blue" aria-hidden="true"></i>
+      </div>
+      <form [formGroup]="formular1" (ngSubmit)="onSubmit1()">
+        <label for="name"><span class="star">*</span>Card Owner</label><br>
+        <input type="text" name=name id=name required formControlName="name" placeholder="Card Owner Name"><br>
+        <label for="number"><span class="star">*</span>Card number</label><br>
+        <input type="text" name="number" required formControlName="number" placeholder=" Valid Card Number"><br>
+        <label for="date"><span class="star">*</span>Expired Date</label><br>
+        <input class="myinput" type="text" name="date" required formControlName="date" placeholder="MM/YY"><br>
+        <label for="code"><span class="star">*</span>CV Code (CVC)</label><br>
+        <input class="myinput" type="text" name=code id=name required formControlName="code" placeholder="CVC"><br>
+      </form>
+    </div>
+    <div class="box oneb">
+      <div class="mycontainer">
+        <div class="box1 ">
+          <p class="title"><span class="span">3</span> Select Delivery Options</p>
+          <div class="transport">
+            <p class="title">Shipping Method</p>
+            <div class="selection">
+              <input type="radio" id="pick" name="delivery" value="store1" (click)="removeTransport()" checked
+                [disabled]="!name.value || !email.value || !address.value || !city.value ||
+          !code.value" />
+              <label for="pick">Collect from Store</label><span class="currency">{{0|currency}}</span><br />
+              <input type="radio" id="pick1" name="delivery" value="store2" (click)="addStandard()" [disabled]="!name.value || !email.value || !address.value || !city.value
+              ||!code.value">
+              <label for="pick1">Standard Shipping</label><span class="currency">{{3|currency}}</span><br />
+              <input type="radio" id="pick1" name="delivery" value="store2" (click)="addTransport()" [disabled]="!name.value || !email.value || !address.value || !city.value
+           ||!code.value" />
+              <label for="pick1">Priority Shipping </label><span class="mycurrency">{{10|currency}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="box1">
+          <p class="title"> Order Summary</p>
+          <hr class="linie1">
+          <p *ngIf="show" class="total">Order Total: {{amount |currency}}</p>
+          <p *ngIf="show1" class="total">Order Total: {{amount+transport|currency}}</p>
+          <p *ngIf="show2" class="total">Order Total: {{amount +standard|currency}}</p>
+          <hr class="linie2">
+          <button mat-raised-button class="pay-btn" (click)="payNow('/pay/paydone','/error/carderror')">Buy
+            now</button><br>
+          <button mat-raised-button routerLink="/bascket/mybascket" class="cancel-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="box1">
-
-    <p class="title"> Order Summary</p>
-    <hr class="linie1">
-    <p *ngIf="show" class="total">Order Total: {{amount |currency}}</p>
-    <p *ngIf="show1" class="total">Order Total: {{amount+transport|currency}}</p>
-    <p *ngIf="show2" class="total">Order Total: {{amount +standard|currency}}</p>
-
-    <hr class="linie2">
-    <button mat-raised-button class="pay-btn" (click)="payNow('/pay/paydone','/error/carderror')">Buy now</button><br>
-    <button mat-raised-button routerLink="/bascket/mybascket" class="cancel-btn">Cancel</button>
+  <div class="containertxt">
+    <p class='txt'>By placing this order, you are confirming that you agree to our <span class="terms">Terms and
+        Conditions and Privacy Policy.</span> </p>
   </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-   </div>
-
-
-
-
-
-<div class="containertxt">
-  <p class='txt'>By placing this order, you are confirming that you agree to our <span class="terms">Terms and Conditions and Privacy Policy.</span> </p>
-</div>
-<!-- <hr> -->
-<div class="address">
-  <p>DDWatches Ltd</p>
-  <p>79 North Squaw Creek Avenue New York, NY 10002</p>
-</div>
+  <!-- <hr> -->
+  <div class="address">
+    <p>DDWatches Ltd</p>
+    <p>79 North Squaw Creek Avenue New York, NY 10002</p>
+  </div>

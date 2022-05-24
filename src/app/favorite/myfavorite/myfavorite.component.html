@@ -2,19 +2,12 @@
 <app-mynavbar></app-mynavbar>
 <app-mybanner></app-mybanner>
 <p class="txt">Your Wishlist</p>
-<div class="container" >
-
-
-    <div class="box" *ngFor="let item of collection1">
-        <button class="btn-delate" (click)="getDelate(item)">X</button>
-        <img src="{{item.url[0]}}" alt="picture">
-
-
-
-
-        <p class="txt">{{item.name}}</p>
-        <button class='btn-add'mat-raised-button (click)="addCart(item)">Add to cart</button>
-
-    </div>
+<div class="container">
+  <div class="box" *ngFor="let item of collection1">
+    <button class="btn-delate" (click)="getDelate(item)">X</button>
+    <img src="{{item.url[0]}}" alt="picture">
+    <p class="txt">{{item.name}}</p>
+    <button class='btn-add' mat-raised-button (click)="addCart(item)">Add to cart</button>
+  </div>
 </div>
 <app-myfooter></app-myfooter>

@@ -1,61 +1,49 @@
 <div class="container-fluid">
-    <div class="box">
+  <div class="box">
     <p class="txt1">Shop</p>
-
     <p class="txt2" routerLink="/" (click)="toHome()">Home</p>
     <p class="txt2" routerLink="/auth/user">My account</p>
     <p class="txt2" routerLink="/register/registeruser">Register</p>
-    <p class="txt2"(click)="toNav()">Search</p>
+    <p class="txt2" (click)="toNav()">Search</p>
     <p class="txt2" routerLink="/contact/form">Contact us</p>
-
-
+  </div>
+  <div class="box">
+    <p class="txt1">Follow us</p>
+    <div class="icon">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-official myicon" aria-hidden="true"></i> <span>
+          Facebook</span></a><br>
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram myicon" aria-hidden="true"></i> <span>
+          Instagram</span></a><br>
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter myicon " aria-hidden="true"></i> <span>
+          Twitter</span></a><br>
+      <a href="https://www.youtube.com/"><i class="fa fa-youtube myicon" aria-hidden="true"></i> <span>
+          YouTube</span></a>
     </div>
-    <div class="box">
-      <p class="txt1">Follow us</p>
-      <div class="icon">
-           <a href="https://www.facebook.com/" ><i class="fa fa-facebook-official myicon"
-               aria-hidden="true"></i> <span > Facebook</span></a><br>
-           <a href="https://www.instagram.com/" ><i class="fa fa-instagram myicon"
-               aria-hidden="true"></i> <span
-               > Instagram</span></a><br>
-           <a href="https://twitter.com/?lang=en" ><i class="fa fa-twitter myicon "
-               aria-hidden="true"></i> <span
-               > Twitter</span></a><br>
-           <a href="https://www.youtube.com/" ><i class="fa fa-youtube myicon" aria-hidden="true"></i> <span
-               > YouTube</span></a>
-      </div>
+  </div>
+  <div class="box">
+    <p class="txt1">Brands</p>
+    <div class="wbrands">
+      <p class="txt4" routerLink="/all/xerix">Xerix</p>
+      <p class="txt4" routerLink="/all/archetype">Archetype</p>
+      <p class="txt4" routerLink="/all/times">Times</p>
+      <p class="txt4" routerLink="/all/gshock">G-Shock</p>
+      <p class="txt4" routerLink="/all/california">California</p>
+      <p class="txt4" routerLink="/all/undone">Undone</p>
+      <p class="txt4" routerLink="/all/luminox">Luminox</p>
     </div>
-
-
-    <div class="box">
-        <p class="txt1">Brands</p>
-        <div class="wbrands">
- <p class="txt4" routerLink="/all/xerix">Xerix</p>
- <p class="txt4" routerLink="/all/archetype">Archetype</p>
- <p class="txt4" routerLink="/all/times">Times</p>
- <p class="txt4" routerLink="/all/gshock">G-Shock</p>
- <p class="txt4" routerLink="/all/california">California</p>
- <p class="txt4" routerLink="/all/undone">Undone</p>
- <p class="txt4" routerLink="/all/luminox">Luminox</p>
-
-        </div>
-
+  </div>
+  <div class="box">
+    <p class="txt1">Newsletter</p>
+    <p class="txt5">Keeep up to update our news releaces & exclusive discounds!</p>
+    <div class="buttons">
+      <form (ngSubmit)="sendData(f)" #f="ngForm">
+        <input type="email" placeholder="Enter your email..." [(ngModel)]='value' name="email" required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <button type="submit"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </form>
     </div>
-    <div class="box">
-<p class="txt1">Newsletter</p>
-<p class="txt5">Keeep up to update our news releaces & exclusive discounds!</p>
-<div class="buttons">
-    <form (ngSubmit)="sendData(f)" #f="ngForm">
-<input type="email" placeholder="Enter your email..." [(ngModel)]='value' name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-<button type="submit"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-
-</form>
-</div>
-
-    </div>
-<div class="emailcont">
- <p class="email">--dorian709@yahoo.co.uk--</p>
-</div>
-
-
+  </div>
+  <div class="emailcont">
+    <p class="email">--dorian709@yahoo.co.uk--</p>
+  </div>
 </div>

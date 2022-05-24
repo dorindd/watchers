@@ -2,28 +2,20 @@
 <app-mynavbar></app-mynavbar>
 <app-mybanner></app-mybanner>
 <div class="mycontainer">
-
   <p class="txt">California Watches</p>
   <div class="mytxt">
     <p class="txt1">
-
-California Watch Co. timepieces were designed with dimension in mind. From concave subdials to raised applied indices,
-domed dials to skeleton hands–we focus on the small details that culminate in unique, modern designs.
-
+      California Watch Co. timepieces were designed with dimension in mind. From concave subdials to raised applied
+      indices,
+      domed dials to skeleton hands–we focus on the small details that culminate in unique, modern designs.
     </p>
-
   </div>
   <div class="container">
     <div class="box" *ngFor="let item of collection" [routerLink]="['/all/california',item.id]" (click)="getWatch1()">
-
-
       <img src="{{item.url[0]}}" alt="wtch seric">
       <div class="overlay">
         <img src="{{item.url[1]}}" alt="wtch seric">
       </div>
-
-
-
       <p class="name">{{item.name}}</p>
       <p class="price">{{item.price | currency}}</p>
       <div class="star">
@@ -32,13 +24,7 @@ domed dials to skeleton hands–we focus on the small details that culminate in 
         <i class="fa fa-star myicon" aria-hidden="true"></i>
         <i class="fa fa-star myicon" aria-hidden="true"></i>
       </div>
-
-
     </div>
-
   </div>
-
-
-
 </div>
 <app-myfooter></app-myfooter>

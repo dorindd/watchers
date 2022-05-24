@@ -6,17 +6,12 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./allnew.component.scss']
 })
 export class AllnewComponent implements OnInit {
-
   collection: any[] = []
   constructor(private service: DataService) { }
-
   ngOnInit(): void {
     this.collection = this.service.getNew();
   }
-
   getWatch1() {
     document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
-
   }
-
 }

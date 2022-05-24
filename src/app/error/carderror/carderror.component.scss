@@ -1,8 +1,7 @@
 :host {
     display: block;
     background-color: #dfe6e9;
-    height:1000px;
-
+    height: 1000px;
 }
 .container-fluid {
     height: 200px;
@@ -17,18 +16,14 @@
         display: block;
         text-align: center;
         height: 50px;
-
         position: relative;
         top: 70px;
-
         letter-spacing: 1px;
         cursor: pointer;
-
         color: #fff;
         font-size: 36px;
         font-weight: 800;
         font-family: arial;
-
         background: linear-gradient(to right, #ffffff 10%, #9725e8 50%, #5795d7 60%);
         background-size: auto auto;
         background-clip: border-box;
@@ -37,211 +32,150 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: textclip 7s linear infinite;
-
-
         @keyframes textclip {
             to {
                 background-position: 200% center;
             }
         }
-
         .first {
-            font-size:35px;
+            font-size: 35px;
         }
     }
 }
-
-
-
 .container {
-    width   : 30%;
-    height  : 500px;
-    border  : 8px solid red;
+    width: 30%;
+    height: 500px;
+    border: 8px solid red;
     position: relative;
-   top:70px;
+    top: 70px;
     background-color: cornsilk;
-
-
-
-.container-pay {
-    text-align : center;
-    color      : black;
-    font-size  : 20px;
-    font-weight: 800;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position   : relative;
-    top        : 20px;
-
-}
-
-.container-linie {
-    height          : 3px;
-    background-color: red;
-    position: relative;
-    top     : 30px;
-
-}
-
-.container-error {
-    text-align : center;
-    position   : relative;
-    top        : 50px;
-    font-size  : 20px;
-    font-weight: 400;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 26px;
-    color      : red;
-
-}
-
-.btn-btn {
-    width           : 120px;
-    height          : 30px;
-    background-color: red;
-    outline         : none;
-    border          : none;
-    position        : relative;
-    display         : block;
-     top             : 130px;
-    margin          : 0 auto;
-
-    text-transform: uppercase;
-    font-weight:500;
-    border-radius:4px;
-    &:hover {
-        opacity:0.8;
-
-    }
-}
-
-.btn-txt {
-    text-align: center;
-    position  : relative;
-    bottom    : 3px;
-
-}
-
-.btn-btn1 {
-   text-align: center;
-    position        : relative;
-    display         : block;
-    margin          : 0 auto;
-    top             : 160px;
-    color:grey;
-    font-size :20px;
-  cursor: pointer;
-    outline         : none;
-    border          : none;
-
-}
-
-
-.btn-txt {
-
-    font-size  : 20px;
-    font-weight: 400;
-    position   : relative;
-    top:2px;
-    right:7px;
-
-
-}
-
-
-
-.çontainer-sugetion {
-    text-align : center;
-    position   : relative;
-    top        : 50px;
-    font-size  : 25px;
-    font-weight: 900;
-
-}
-
-.çontainer-sugetion1 {
-    text-align: center;
-    position  : relative;
-    top       : 70px;
-    font-size : 25px;
-}
-}
-@media(max-width:576px) {
-
-     .container-fluid {
-                .logo {
-                    font-size: 25px;
-                }
-            }
-.container{
-
-    width:98%;
-
-.btn-btn {
-    position: relative;
-    top:100px;
-}
-
-
-    .btn-btn1 {
-position: relative;
-top:130px;
-
-}
-
-}
-
-
-
-
-
-
-}
-
-@media(min-width:768px)and (max-width:900px) {
- .container-fluid {
-                .logo {
-                    font-size: 25px;
-                }
-            }
-.container{
-
-    width:60%;
-    .btn-btn1 {
-    position: relative;
-    top:150px;
-
-    }
-}
-
-
-
-
-}
-@media(min-width:900px)and (max-width:1024px) {
- .container-fluid {
-                .logo {
-                    font-size: 25px;
-                }
-            }
-    .container{
-
-        width:70%;
-         .btn-btn {
-
+    .container-pay {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: Georgia, "Times New Roman", Times, serif;
         position: relative;
-        top:150px;
+        top: 20px;
     }
-
-
-
-    .btn-btn1 {
+    .container-linie {
+        height: 3px;
+        background-color: red;
         position: relative;
-        top:180px;
-
+        top: 30px;
+    }
+    .container-error {
+        text-align: center;
+        position: relative;
+        top: 50px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 26px;
+        color: red;
+    }
+    .btn-btn {
+        width: 120px;
+        height: 30px;
+        background-color: red;
+        outline: none;
+        border: none;
+        position: relative;
+        display: block;
+        top: 130px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-weight: 500;
+        border-radius: 4px;
+        &:hover {
+            opacity: 0.8;
         }
     }
-
-
-
-
+    .btn-txt {
+        text-align: center;
+        position: relative;
+        bottom: 3px;
+    }
+    .btn-btn1 {
+        text-align: center;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: 160px;
+        color: grey;
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+    .btn-txt {
+        font-size: 20px;
+        font-weight: 400;
+        position: relative;
+        top: 2px;
+        right: 7px;
+    }
+    .çontainer-sugetion {
+        text-align: center;
+        position: relative;
+        top: 50px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .çontainer-sugetion1 {
+        text-align: center;
+        position: relative;
+        top: 70px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 576px) {
+    .container-fluid {
+        .logo {
+            font-size: 25px;
+        }
+    }
+    .container {
+        width: 98%;
+        .btn-btn {
+            position: relative;
+            top: 100px;
+        }
+        .btn-btn1 {
+            position: relative;
+            top: 130px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+    .container-fluid {
+        .logo {
+            font-size: 25px;
+        }
+    }
+    .container {
+        width: 60%;
+        .btn-btn1 {
+            position: relative;
+            top: 150px;
+        }
+    }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+    .container-fluid {
+        .logo {
+            font-size: 25px;
+        }
+    }
+    .container {
+        width: 70%;
+        .btn-btn {
+            position: relative;
+            top: 150px;
+        }
+        .btn-btn1 {
+            position: relative;
+            top: 180px;
+        }
+    }
 }

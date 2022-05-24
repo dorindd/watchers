@@ -1,50 +1,41 @@
 <app-logo></app-logo>
 <app-mynavbar></app-mynavbar>
 <app-mybanner></app-mybanner>
-
 <div class="container">
   <div class="box1">
     <div class="mypict">
       <img src="{{watch.url[0]}}" alt="">
       <img src="{{watch.url[1]}}" alt="" (mouseover)="getShow1()" (mouseout)="getOut1()">
       <img src="{{watch.url[2]}}" alt="" (mouseover)="getShow2()" (mouseout)="getOut2()">
-
     </div>
     <div class="hoverpict">
       <img class='img-img' src="{{watch.url[0]}}" alt="" *ngIf="show1">
       <img class='img-img' src="{{watch.url[1]}}" alt="" *ngIf="show2">
       <img class='img-img' src="{{watch.url[2]}}" alt="" *ngIf="show3">
-
     </div>
   </div>
   <div class="box2">
-
     <p class="txt">{{watch.name}}</p>
-
     <p class="price">{{watch.price | currency}}</p>
     <button class='btn-cart' mat-raised-button (click)="addColection(watch)">Add to Cart</button><br>
-
-    <button class='btn-fav' (click)="addFavorite(watch)"><i class="fa fa-heart myicon" aria-hidden="true"></i> Save to Wishlist</button>
-<div class="icons">
-  <i class="fa fa-plane icon" aria-hidden="true"></i>
-  <i class="fa fa-calendar icon" aria-hidden="true"></i>
-  <i class="fa fa-globe icon" aria-hidden="true"><br></i>
-  <i class="fa fa-lock icon" aria-hidden="true"></i>
-</div>
+    <button class='btn-fav' (click)="addFavorite(watch)"><i class="fa fa-heart myicon" aria-hidden="true"></i> Save to
+      Wishlist</button>
+    <div class="icons">
+      <i class="fa fa-plane icon" aria-hidden="true"></i>
+      <i class="fa fa-calendar icon" aria-hidden="true"></i>
+      <i class="fa fa-globe icon" aria-hidden="true"><br></i>
+      <i class="fa fa-lock icon" aria-hidden="true"></i>
+    </div>
     <div class="list">
-
       <div class="mylist">
-          <span>Free Shipping </span><br>
+        <span>Free Shipping </span><br>
         <span>Worldwide</span>
-
       </div>
       <div class="mylist">
-         <span>30 Days</span><br>
+        <span>30 Days</span><br>
         <span>Return</span>
-
       </div>
       <div class="mylist">
-
         <span>Authorized</span>
         <br>
         <span>Dealer</span>
@@ -54,13 +45,7 @@
         <span>Checkout</span>
       </div>
     </div>
-
-
-
-
-
   </div>
-
   <div class="box3">
     <mat-expansion-panel (opened)="panelOpenState = true ;tops=false" (closed)="panelOpenState = false ;tops=true"
       class="mat">
@@ -68,23 +53,18 @@
         <mat-panel-title class="title">
           Description
         </mat-panel-title>
-
       </mat-expansion-panel-header>
       <p class="txt-txt">{{watch.txt1}}</p>
       <p class="txt-txt">{{watch.txt2}} </p>
       <p class="txt-txt">{{watch.txt3}}</p>
-
     </mat-expansion-panel>
-
     <mat-expansion-panel (opened)="panelOpenState = true ;tops=false" (closed)="panelOpenState = false ;tops=true"
       class="mat">
       <mat-expansion-panel-header>
         <mat-panel-title class="title">
           Specifications
         </mat-panel-title>
-
       </mat-expansion-panel-header>
-
       <p class="txt-txt1">{{watch.txt5}}</p>
       <p class="txt-txt1">{{watch.txt6}}</p>
       <p class="txt-txt1">{{watch.txt7}}</p>
@@ -97,22 +77,14 @@
       <p class="txt-txt1">{{watch.txt14}}</p>
       <p class="txt-txt1">{{watch.txt15}}</p>
       <p class="txt-txt1">{{watch.txt16}}</p>
-
-
-
     </mat-expansion-panel>
-
-
     <mat-expansion-panel (opened)="panelOpenState = true ;tops=false" (closed)=" panelOpenState=false ;tops=true"
       class="mat">
       <mat-expansion-panel-header>
         <mat-panel-title class="title">
           Shipping
         </mat-panel-title>
-
       </mat-expansion-panel-header>
-
-
       <strong>**Important:&nbsp;Due to<span>&nbsp;</span>the impact of COVID-19<span>&nbsp;</span>on fulfillment and
         shipping infrastructure, order delivery<span>&nbsp;</span>could be delayed up to an additional 3 business days
         for
@@ -123,19 +95,14 @@
         Class (orders over $99+). Not all countries are eligible for free international shipping. Upgraded shipping
         options
         (estimated transit times and rates) will be quoted during checkout.&nbsp;</p>
-
     </mat-expansion-panel>
-
-
     <mat-expansion-panel (opened)="panelOpenState = true;tops=false " (closed)="panelOpenState = false;tops=true "
       class="mat">
       <mat-expansion-panel-header>
         <mat-panel-title class="title">
           Returns
         </mat-panel-title>
-
       </mat-expansion-panel-header>
-
       <p class="txt-txt">We could all use some extra time. If your new, unworn item is not 100% to your satisfaction,
         you have 30 days from
         the original ship date&nbsp;to return it. To be eligible for a return, your item must be unused, unworn and in
@@ -144,17 +111,13 @@
         Returns page.&nbsp; **Unfortunately Mystery watches, SISU, Nixon and Vestal sales are final and not eligible for
         return.</p>
     </mat-expansion-panel>
-
-
     <mat-expansion-panel (opened)="panelOpenState = true;tops=false" (closed)="panelOpenState = false;tops=true"
       class="mat">
       <mat-expansion-panel-header>
         <mat-panel-title class="title">
           Warranty
         </mat-panel-title>
-
       </mat-expansion-panel-header>
-
       <span class="txt-txt">Warranty periods range from 12 months to lifetime, depending on the brand. All of the brands
         we carry come
         with&nbsp;their international manufacturer warranty.* All warranty issues are to be handled directly with the
@@ -168,31 +131,24 @@
         crystal, strap or bracelet; damage resulting from improper handling, lack of care, accidents or normal wear and
         tear;
         damage from contact with objects; water damage.&nbsp;</span>
-
     </mat-expansion-panel>
-
-
     <div class="topselling" *ngIf="tops">
-   <div class="top" routerLink="/all/california">
-     <div class="top1">
-       <p>California Watch Co.</p>
-     </div>
-   </div>
-   <div class="top" routerLink="/all/undone">
-      <div class="top2">
-         <p>Undone</p>
+      <div class="top" routerLink="/all/california">
+        <div class="top1">
+          <p>California Watch Co.</p>
+        </div>
       </div>
-   </div>
-   <div class="top" routerLink="/all/luminox">
-      <div class="top3">
+      <div class="top" routerLink="/all/undone">
+        <div class="top2">
+          <p>Undone</p>
+        </div>
+      </div>
+      <div class="top" routerLink="/all/luminox">
+        <div class="top3">
           <p>Luminox</p>
+        </div>
       </div>
-   </div>
-
     </div>
-
-
-
   </div>
   <div class="box4">
     <img class='myimg' src="{{watch.url[1]}}" alt="">

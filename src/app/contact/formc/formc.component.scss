@@ -1,72 +1,50 @@
-
-
-
-
 .txt1 {
   color: purple;
   text-align: center;
   position: relative;
-  top:10px;
-   text-align: center;
-
- text-align: center;
-    font-size: 35px;
-    font-weight: 600;
-    font-family: "Libre Baskerville", serif;
-
-
+  top: 10px;
+  text-align: center;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Libre Baskerville", serif;
 }
 .mycontainer {
   width: 40%;
-  min-height:600px;
-
-
+  min-height: 600px;
   position: relative;
-  bottom:50px;
-  background:lightblue;
-
-
-
-
-    box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
-
+  bottom: 50px;
+  background: lightblue;
+  box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
 }
-.txt2{
-    position: relative;
-    top:20px;
-    text-align: center;
-    color:black;
-    font-size:12px;
-    font-weight:600;
-
-    font-family: arial;
-    letter-spacing: 1px;
+.txt2 {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: arial;
+  letter-spacing: 1px;
 }
 form {
   text-align: center;
   position: relative;
   top: 40px;
-  height:100%;
+  height: 100%;
   width: 100%;
-
 }
 input {
   width: 70%;
   height: 40px;
   outline: none;
   margin: 2px;
-
-
-
-
- box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
   border: 2px rgba(255, 255, 255, 0.4) solid;
   border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
   border-right: 2px rgba(40, 40, 40, 0.35) solid;
-
 }
 textarea {
   width: 70%;
@@ -91,10 +69,10 @@ textarea::placeholder {
   letter-spacing: 1px;
 }
 .btn-btn {
-  width:30%;
+  width: 30%;
   height: 35px;
   position: relative;
-  top:50px;
+  top: 50px;
   background-color: rgba(255, 0, 212, 0);
   letter-spacing: 1px;
   color: purple;
@@ -104,75 +82,58 @@ textarea::placeholder {
   border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
   border-right: 1px rgba(40, 40, 40, 0.35) solid;
   font-size: 15px;
-  font-weight:500;
-border-radius:4px;
+  font-weight: 500;
+  border-radius: 4px;
 }
-.btn-btn:hover{
-   opacity: 0.8;
-   color:white;
-
+.btn-btn:hover {
+  opacity: 0.8;
+  color: white;
 }
-
 @media screen and (max-width: 575px) {
-    :host{
-        display:block;
-       height:550px;
-    }
-    .txt1{
-        position: relative;
-        top:10px;
-        font-size:20px;
-    }
-    .txt2{
-        font-size:12px;
-    }
+  :host {
+    display: block;
+    height: 550px;
+  }
+  .txt1 {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+  }
+  .txt2 {
+    font-size: 12px;
+  }
   .mycontainer {
-      position: relative;
-
+    position: relative;
     width: 90%;
     height: 620px;
   }
   form {
     position: relative;
-    bottom:70px;
-
-   width:100%;
-
-
+    bottom: 70px;
+    width: 100%;
   }
-
   .btn-btn {
     position: relative;
-    top:30px;
-
-    width:35%;
+    top: 30px;
+    width: 35%;
     height: 35px;
     font-size: 11px;
   }
-
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio:2) and (orientation: portrait) {
-:host{
-        display:block;
-        height:700px;
-    }
-    .txt1{
-        position: relative;
-        top:10px;
-        font-size:25px;
-    }
-    .txt2{
-        font-size:15px;
-    }
-
-
-
-
-
-
-
-
-    .mycontainer {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  :host {
+    display: block;
+    height: 700px;
+  }
+  .txt1 {
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+  }
+  .txt2 {
+    font-size: 15px;
+  }
+  .mycontainer {
     width: 90%;
     height: 620px;
   }
@@ -181,39 +142,31 @@ border-radius:4px;
     top: 50px;
   }
   .btn-btn {
-    position:relative;
-    top:50px;
-    width:40%;
-    height:40px;
+    position: relative;
+    top: 50px;
+    width: 40%;
+    height: 40px;
     font-size: 15px;
   }
-
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-
-:host{
-        display:block;
-       height:1000px;
-    }
-    .txt1{
-        position: relative;
-        top:50px;
-        font-size:40px;
-    }
-    .txt2{
-        font-size:30px;
-    }
-
-
-
-
-
-
-    .mycontainer {
-      position: relative;
-      bottom:60px;
+  :host {
+    display: block;
+    height: 1000px;
+  }
+  .txt1 {
+    position: relative;
+    top: 50px;
+    font-size: 40px;
+  }
+  .txt2 {
+    font-size: 30px;
+  }
+  .mycontainer {
+    position: relative;
+    bottom: 60px;
     width: 90%;
-    height:630px;
+    height: 630px;
   }
   form {
     position: relative;
@@ -221,39 +174,30 @@ border-radius:4px;
   }
   .btn-btn {
     position: relative;
-    top:50px;
-    width:40%;
-    height:40px;
+    top: 50px;
+    width: 40%;
+    height: 40px;
     font-size: 15px;
   }
-
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-:host{
-        display:block;
-       height:1000px;
-    }
-    .txt1{
-        position: relative;
-        top:10px;
-        font-size:25px;
-    }
-    .txt2{
-        font-size:15px;
-    }
-
-
-
-
-
-
-    .mycontainer {
-      position: relative;
-      bottom:60px;
+  :host {
+    display: block;
+    height: 1000px;
+  }
+  .txt1 {
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+  }
+  .txt2 {
+    font-size: 15px;
+  }
+  .mycontainer {
+    position: relative;
+    bottom: 60px;
     width: 90%;
-    height:630px;
+    height: 630px;
   }
   form {
     position: relative;
@@ -261,11 +205,9 @@ border-radius:4px;
   }
   .btn-btn {
     position: relative;
-    top:50px;
-    width:35%;
-    height:45px;
+    top: 50px;
+    width: 35%;
+    height: 45px;
     font-size: 15px;
   }
-
-
 }

@@ -6,16 +6,12 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./archetype.component.scss']
 })
 export class ArchetypeComponent implements OnInit {
-
-collection:any[]=[]
-  constructor(private service:DataService,) { }
-
+  collection: any[] = []
+  constructor(private service: DataService,) { }
   ngOnInit(): void {
     this.collection = this.service.getArchetype();
   }
   getWatch1() {
     document.getElementById("nav")?.scrollIntoView({ behavior: "smooth" });
-
   }
-
 }

@@ -9,129 +9,59 @@ import Swal from 'sweetalert2';
   styleUrls: ['./mybascket.component.scss']
 })
 export class MybascketComponent implements OnInit {
-collection:any[]=[]
-paymentTotal:any
-total:any;
-
-
-
-showbasket:boolean=false;
-counter:any=0
-  constructor(private service:DataService,private router:Router,public location:Location) { }
-
+  collection: any[] = []
+  paymentTotal: any
+  total: any;
+  showbasket: boolean = false;
+  counter: any = 0
+  constructor(private service: DataService, private router: Router, public location: Location) { }
   ngOnInit(): void {
-
-
     this.service.getDataFromLocalSTorage()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    this.service.allPayment.subscribe(data =>{
-this.total=data;
-
-
-  if(this.total>=1){
-    this.showbasket=true
-  }
-  else{
-    this.showbasket=false
-  }
-
-
-
-
+    this.service.allPayment.subscribe(data => {
+      this.total = data;
+      if (this.total >= 1) {
+        this.showbasket = true
+      }
+      else {
+        this.showbasket = false
+      }
     })
-
-    this.collection=this.service.getCollection()
+    this.collection = this.service.getCollection()
     this.totalPrice();
-
-
-
   }
-remove(item:any){
-  this.service.removeFromCollection(item);
-
-  this.totalPrice();
-  if (this.total == 0) {
-    this.router
-      .navigateByUrl('/empty/bagempty', { skipLocationChange: false })
-      .then(() => {
-        this.router.navigate([decodeURI(this.location.path())]);
-      })
+  remove(item: any) {
+    this.service.removeFromCollection(item);
+    this.totalPrice();
+    if (this.total == 0) {
+      this.router
+        .navigateByUrl('/empty/bagempty', { skipLocationChange: false })
+        .then(() => {
+          this.router.navigate([decodeURI(this.location.path())]);
+        })
+    }
   }
-
-
-
-
-
-
-
-
-
-
-
-}
-
-increace(item:any){
-  if(item.quantity<10){
-item.quantity ++
- this.totalPrice()
+  increace(item: any) {
+    if (item.quantity < 10) {
+      item.quantity++
+      this.totalPrice()
+    }
+    else {
+      Swal.fire({
+        backdrop: false,
+        position: 'center',
+        width: 400,
+        icon: 'info',
+        title: 'Out of stock',
+      });
+    }
   }
-  else{
-    Swal.fire({
-      backdrop: false,
-      position: 'center',
-      width: 400,
-      icon: 'info',
-      title: 'Out of stock',
-
-
-
-
-    });
+  decreace(item: any) {
+    if (item.quantity != 0) {
+      item.quantity--
+      this.totalPrice()
+    }
   }
-
-
-}
-
-decreace(item:any){
-  if(item.quantity!=0){
- item.quantity --
- this.totalPrice()
+  totalPrice() {
+    this.service.getTotalPrice()
   }
-
-
 }
-
-totalPrice(){
-  this.service.getTotalPrice()
-
-
-
-
-
-
-
-}
-
-
-
-}
-
-
-

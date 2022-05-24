@@ -1,22 +1,15 @@
-
 .container-fluid {
     position: relative;
-
-  top: 110px;
-
-
-
+    top: 110px;
     min-height: 300px;
     background: #34495e;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     .box {
         width: 20%;
         height: 200px;
         padding: 15px;
-
         .txt1 {
             text-align: center;
             font-size: 20px;
@@ -34,7 +27,6 @@
             font-size: 16px;
             line-height: 10px;
             color: white;
-
             cursor: pointer;
             &:hover {
                 color: slateblue;
@@ -53,14 +45,12 @@
         .icon {
             text-align: center;
             padding: 15px;
-
             a {
                 text-decoration: none;
                 color: white;
                 &:hover {
                     color: slateblue;
                 }
-
                 .myicon {
                     font-size: 30px;
                     color: white;
@@ -74,13 +64,11 @@
             padding: 10px;
             text-transform: uppercase;
             line-height: 10px;
-
             .txt4 {
                 text-align: center;
                 font-size: 13px;
                 font-weight: 500;
                 color: white;
-
                 cursor: pointer;
                 &:hover {
                     color: slateblue;
@@ -95,66 +83,56 @@
         }
         .buttons {
             position: relative;
-            top:30px;
+            top: 30px;
             text-align: center;
-            form{
-                display:flex;
+            form {
+                display: flex;
                 justify-content: center;
-                  input {
-                width: 70%;
-                padding:11px;
-   -webkit-appearance: none;
-                 border-radius:0;
-                border: none;
-                outline: none;
-                background-color: white;
-
-                &::placeholder {
-                    color: grey;
-                    font-size: 14px;
-                    text-indent: 10px;
+                input {
+                    width: 70%;
+                    padding: 11px;
+                    -webkit-appearance: none;
+                    border-radius: 0;
+                    border: none;
+                    outline: none;
+                    background-color: white;
+                    &::placeholder {
+                        color: grey;
+                        font-size: 14px;
+                        text-indent: 10px;
+                    }
+                }
+                input.ng-invalid {
+                    border-left: 5px solid red;
+                }
+                input.ng-valid {
+                    border-left: 5px solid blue;
+                }
+                button {
+                    width: 30px;
+                    padding: 11px;
+                    border: none;
+                    outline: none;
+                    background-color: black;
+                    color: white;
+                    text-transform: uppercase;
+                    &:hover {
+                        opacity: 0.7;
+                    }
                 }
             }
-
-            input.ng-invalid {
-                border-left: 5px solid red;
-            }
-
-            input.ng-valid {
-                border-left: 5px solid blue;
-            }
-            button {
-                width: 30px;
-                padding:11px;
-
-                border: none;
-                outline: none;
-
-                 background-color: black;
-                color: white;
-                text-transform: uppercase;
-                &:hover {
-                    opacity: 0.7;
-                }
-            }
-
-            }
-
         }
     }
     .linie {
         position: relative;
         bottom: 40px;
     }
-
     .emailcont {
         display: block;
         margin: 0 auto;
         width: 70%;
         height: 50px;
-
         border-top: solid 1px grey;
-
         .email {
             text-align: center;
             padding: 10px;
@@ -190,71 +168,58 @@
             .txt5 {
                 text-align: center;
             }
-           .buttons{
-form{
-display:flex;
-justify-content: center;
-     input {
-
-                 -webkit-appearance: none;
-                 border-radius: 0
+            .buttons {
+                form {
+                    display: flex;
+                    justify-content: center;
+                    input {
+                        -webkit-appearance: none;
+                        border-radius: 0;
+                    }
+                }
             }
-
-}
-
-           }
         }
     }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
     .container-fluid {
         gap: 3px;
-
         .box {
             width: 24%;
             height: 260px;
             padding: 15px;
-
             .buttons {
                 position: relative;
                 right: 30px;
                 display: flex;
-
-               form{
+                form {
                     input {
-                    width:150px;
-                     -webkit-appearance: none;
-                 border-radius: 0
+                        width: 150px;
+                        -webkit-appearance: none;
+                        border-radius: 0;
+                    }
                 }
-               }
             }
         }
     }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     .container-fluid {
         position: relative;
         top: 180px;
-
         gap: 3px;
-
         .box {
             width: 24%;
             height: 260px;
             padding: 15px;
-
             .buttons {
                 display: flex;
-
-                form{
-
+                form {
                     input {
-                    width: 200px;
-                     -webkit-appearance: none;
-                 border-radius: 0
-                }
+                        width: 200px;
+                        -webkit-appearance: none;
+                        border-radius: 0;
+                    }
                 }
             }
         }

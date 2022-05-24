@@ -1,77 +1,45 @@
-
-
-
- <app-logo></app-logo>
+<app-logo></app-logo>
 <app-mynavbar></app-mynavbar>
 <app-mybanner></app-mybanner>
-
 <p class="txt">Cart</p>
 <div class="mycontainer">
-    <table id="table" >
-
-  <tr>
-    <th></th>
-    <th ><span class="title">Quantity</span></th>
-    <th><span class="title">Price</span></th>
-
-
-
-
-  </tr>
-
-
-  <tr *ngFor="let item of collection" >
-    <td>
-         <img src="{{item.url[0]}}" alt="picture">
-          <button class='btn-rem' (click)="remove(item)">Remove </button>
-         <p class="allnames">{{ item.name }}</p>
-
-
-
-    </td>
-
-    <td>
-         <div class="mycounter">
-
-           <p class="number"><strong>{{item.quantity}}</strong></p>
-           <div class="number one">
-             <div type="button" (click)="increace(item)"> <i class="fa fa-plus " aria-hidden="true"></i></div>
-             <div type="button" (click)="decreace(item)"> <i class="fa fa-minus " aria-hidden="true"></i></div>
-           </div>
-         </div>
-    </td>
-
-    <td class="price"> <span>{{item.price * item.quantity | currency}}</span></td>
-
-  </tr>
-
- <tr>
-
-
-  <td></td>
-   <td>
-     <span class="title1">Subtotal</span>
-   </td>
-   <td>
-
-     <p class="total">{{total | currency}}</p>
-   </td>
- </tr>
-
-
-
-    </table>
-
-
-
-<div class="box">
-  <p class="check-txt">Shipping, taxes, and discounts calculated at checkout.</p>
-
-<button class='btncheck' mat-raised-button routerLink="/payment/mypayment">Checkout</button>
-
+  <table id="table">
+    <tr>
+      <th></th>
+      <th><span class="title">Quantity</span></th>
+      <th><span class="title">Price</span></th>
+    </tr>
+    <tr *ngFor="let item of collection">
+      <td>
+        <img src="{{item.url[0]}}" alt="picture">
+        <button class='btn-rem' (click)="remove(item)">Remove </button>
+        <p class="allnames">{{ item.name }}</p>
+      </td>
+      <td>
+        <div class="mycounter">
+          <p class="number"><strong>{{item.quantity}}</strong></p>
+          <div class="number one">
+            <div type="button" (click)="increace(item)"> <i class="fa fa-plus " aria-hidden="true"></i></div>
+            <div type="button" (click)="decreace(item)"> <i class="fa fa-minus " aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </td>
+      <td class="price"> <span>{{item.price * item.quantity | currency}}</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <span class="title1">Subtotal</span>
+      </td>
+      <td>
+        <p class="total">{{total | currency}}</p>
+      </td>
+    </tr>
+  </table>
+  <div class="box">
+    <p class="check-txt">Shipping, taxes, and discounts calculated at checkout.</p>
+    <button class='btncheck' mat-raised-button routerLink="/payment/mypayment">Checkout</button>
+  </div>
 </div>
-
-</div>
-
 <app-mybrands></app-mybrands>
 <app-myfooter></app-myfooter>

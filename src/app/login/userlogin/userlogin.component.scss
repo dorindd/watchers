@@ -1,144 +1,89 @@
-
-
 .container {
     display: block;
     position: relative;
     width: 30%;
-    min-height:560px;
-
-
-
+    min-height: 560px;
     z-index: 11;
-
-
     .txt {
         display: block;
         position: relative;
-        bottom:10px;
-
+        bottom: 10px;
         text-align: center;
-
- text-align: center;
-    font-size: 35px;
-    font-weight: 600;
-    font-family: "Libre Baskerville", serif;
-
-
-     }
-
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        font-family: "Libre Baskerville", serif;
+    }
     form {
         margin: 0 auto;
         width: 80%;
-        height:500px;
+        height: 500px;
         background-color: white;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-
         box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.75);
-
-
-
-.col{
-    position: relative;
-    top:30px;
-    line-height:30px;
-
- label {
+        .col {
             position: relative;
-            top: 10px;
-
-            font-size: 13px;
-            font-family: sans-serif;
-            font-weight: 550;
-            span {
-                color: red;
-                font-size: 17px;
+            top: 30px;
+            line-height: 30px;
+            label {
+                position: relative;
+                top: 10px;
+                font-size: 13px;
+                font-family: sans-serif;
+                font-weight: 550;
+                span {
+                    color: red;
+                    font-size: 17px;
+                }
+                .myinp {
+                    display: block;
+                    width: 93%;
+                    border-radius: 5px;
+                    outline: none;
+                    margin: 20px auto;
+                }
             }
-
-   .myinp {
-            display: block;
-
-            width: 93%;
-
-            border-radius: 5px;
-
-            outline: none;
-            margin: 20px auto;
-
+            .field-icon {
+                float: right;
+                margin-right: 25px;
+                margin-top: -35px;
+                position: relative;
+                z-index: 2;
+                font-size: 20px;
+            }
         }
-
-
-
-
-
-
-
-
-        }
-
-
-
- .field-icon {
-   float: right;
-  margin-right:25px;
-   margin-top: -35px;
-  position: relative;
-  z-index: 2;
-  font-size:20px;
- }
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-        .btn {position: relative;
-            bottom:110px;
-            margin:0 auto;
+        .btn {
+            position: relative;
+            bottom: 110px;
+            margin: 0 auto;
             background-color: #0f828f;
             width: 80%;
             height: 40px;
             text-align: center;
             color: white;
             font-size: 15px;
-
-
- outline: none;
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 1px rgba(255, 255, 255, 0.4) solid;
-  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
-  border-right: 1px rgba(40, 40, 40, 0.35) solid;
-
-
-
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+            border: 1px rgba(255, 255, 255, 0.4) solid;
+            border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+            border-right: 1px rgba(40, 40, 40, 0.35) solid;
             &:hover {
                 opacity: 0.9;
-                 color:black;
-                 font-weight:500;
+                color: black;
+                font-weight: 500;
             }
         }
-
         .btn-btn {
             position: relative;
-
             left: 280px;
             bottom: 5px;
             width: 50px;
             height: 40px;
             outline: none;
-
             .fa {
                 font-size: 30px;
                 color: black;
@@ -146,28 +91,23 @@
         }
         .mytxt {
             position: relative;
-            bottom:80px;
+            bottom: 80px;
             text-indent: 43px;
-            color:black;
+            color: black;
             font-weight: 500;
-
         }
-
         .googlebtn {
-             position: relative;
-            bottom:70px;
+            position: relative;
+            bottom: 70px;
             margin: 0 auto;
             width: 60%;
             height: 40px;
             transform: scale(1);
-
-
-             outline: none;
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 1px rgba(255, 255, 255, 0.4) solid;
-  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
-  border-right: 1px rgba(40, 40, 40, 0.35) solid;
-
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+            border: 1px rgba(255, 255, 255, 0.4) solid;
+            border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+            border-right: 1px rgba(40, 40, 40, 0.35) solid;
             .googleimg {
                 position: relative;
                 right: 10px;
@@ -176,63 +116,57 @@
             span {
                 text-align: center;
                 position: relative;
-
                 font-weight: 600;
             }
-
             &:hover {
                 transition: 0.2s ease-in;
                 transform: scale(1.2);
             }
         }
-.btn-signOut{
-       position: relative;
-            bottom:40px;
+        .btn-signOut {
+            position: relative;
+            bottom: 40px;
             margin: 0 auto;
-    width:30%;
-    height:35px;
-    text-transform:uppercase;
-    background-color:red;
-    color:white;
-    border:none;
-     outline: none;
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 1px rgba(255, 255, 255, 0.4) solid;
-  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
-  border-right: 1px rgba(40, 40, 40, 0.35) solid;
-    border-radius: 5px;
-    &:hover {
-        opacity:0.9;
-        color:purple;
-        font-weight:500;
-    }
-}
+            width: 30%;
+            height: 35px;
+            text-transform: uppercase;
+            background-color: red;
+            color: white;
+            border: none;
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+            border: 1px rgba(255, 255, 255, 0.4) solid;
+            border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+            border-right: 1px rgba(40, 40, 40, 0.35) solid;
+            border-radius: 5px;
+            &:hover {
+                opacity: 0.9;
+                color: purple;
+                font-weight: 500;
+            }
+        }
         .account {
             position: relative;
-         bottom:10px;
+            bottom: 10px;
             text-align: center;
             span {
                 font-weight: 550;
             }
             a {
                 text-decoration: none;
-                font-weight:550;
+                font-weight: 550;
                 &:hover {
-                    color:purple;
-                    font-weight:650;
+                    color: purple;
+                    font-weight: 650;
                 }
             }
         }
     }
 }
-
 @media screen and (max-width: 575px) {
-
-
     .container {
         width: 100%;
         height: 580px;
-
         form {
             .btn-btn {
                 position: relative;
@@ -243,25 +177,19 @@
                     color: black;
                 }
             }
-
             .googlebtn {
                 width: 70%;
             }
-
-            .btn-signOut{
-                width:40%;
+            .btn-signOut {
+                width: 40%;
             }
         }
     }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
     .container {
         width: 70%;
         height: 580px;
-
         form {
             .btn-btn {
                 position: relative;
@@ -272,24 +200,19 @@
                     color: black;
                 }
             }
-
             .googlebtn {
                 width: 50%;
             }
-
-            .btn-signOut{
-                width:40%;
+            .btn-signOut {
+                width: 40%;
             }
         }
     }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
     .container {
         width: 70%;
         height: 580px;
-
         form {
             .btn-btn {
                 position: relative;
@@ -300,14 +223,12 @@
                     color: black;
                 }
             }
-
             .googlebtn {
                 width: 50%;
             }
-
-            .btn-signOut{
-                width:40%;
-                height:40px;
+            .btn-signOut {
+                width: 40%;
+                height: 40px;
             }
         }
     }
